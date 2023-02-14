@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="09b75d8b-8df3-4616-b462-14c049e00da5" ChangeDateTime="10/10/2019 14:14:13" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaCSConfig].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaCSConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ruta" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e5f11446-7277-4f2e-838a-98e51d300ad1" ChangeDateTime="10/10/2019 14:18:21" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaCSConfig].[Ruta]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaCSConfig]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NS" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7e381a8-e68c-457d-8db2-8bc5d3af3315" ChangeDateTime="10/10/2019 15:02:03" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[ProductoAlmacen].[ControlProductoAlmacenID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProductoAlmacen]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProductoAlmacenID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5476b9a9-0eef-4c40-a1cb-ec84a3ceb20b" ChangeDateTime="10/11/2019 15:44:29" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PermisoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="64bef6e4-1dec-48ae-897d-3b79b42b7abe" ChangeDateTime="10/11/2019 15:45:19" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[PermisoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsuarioPermiso" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4719f419-d476-47cb-b370-f43186ee6f41" ChangeDateTime="10/11/2019 15:46:03" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[UsuarioPermiso]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsuarioPermisoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dc3b1fd2-829e-4d6e-aab0-605d3c5510c7" ChangeDateTime="10/11/2019 15:46:09" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[Usuario]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsuarioID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="964349b3-078c-4849-a29b-dda0c05e4d7a" ChangeDateTime="10/11/2019 15:57:19" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[Preautorizar]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Preautoriza" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3f8d2cd0-dd5c-4aa5-bd68-a196c9db501b" ChangeDateTime="10/11/2019 15:57:25" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[Autorizar]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Autoriza" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fa91a8de-a0eb-44e2-981c-5eb5f41bcffe" ChangeDateTime="10/11/2019 15:58:41" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[UsuarioPermisoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsuarioPermisoTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e8a5056-de3f-4118-b26c-4204e242a840" ChangeDateTime="10/11/2019 15:58:55" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Table1].[UsuarioPermisoTipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsuarioTipoDocumentoPermisoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="748b6c51-05ff-4b67-b2ea-e01013810a91" ChangeDateTime="10/14/2019 02:41:48" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PersonalMail].[TipoMail]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PersonalMail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TipoMailID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bac6b041-c299-42aa-a4fd-dd1dd8a97f06" ChangeDateTime="10/24/2019 22:07:34" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaEstatusTipoDocumento].[SistemaEstatusTipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaEstatusTipoDocumento]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="791c5f37-0af4-4d0d-897c-3b12e0efc917" ChangeDateTime="10/24/2019 22:08:16" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[EstatusDocumento].[SistemaEstatusTipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EstatusDocumento]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f60d74af-e067-4742-a694-39d183bfdf51" ChangeDateTime="10/24/2019 22:30:30" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[EstatusDocumento].[EstatusTipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EstatusDocumento]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e41d8afd-d76b-4421-a3cb-7a1d6907a92a" ChangeDateTime="10/24/2019 22:31:39" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaEstatusTipoDocumento].[EstatusTipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaEstatusTipoDocumento]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aa7f1b40-30e9-4d7c-b9e9-7acbaffcc5a7" ChangeDateTime="10/26/2019 21:44:00" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaEstatusRegla].[TipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaEstatusRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fae4c5b1-6391-4967-8e69-fdd8e1b26bb5" ChangeDateTime="10/26/2019 21:44:15" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaEstatusRegla].[SistemaEstatusDocumentoIDPermite]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaEstatusRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoIDPermite" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b469825b-d98c-4a20-bab2-37eb9a9c9f9b" ChangeDateTime="10/26/2019 22:14:52" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaTipoDocumentoRegla].[TipoDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaTipoDocumentoRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d852850a-13bf-4e77-95e0-69d3dab7decb" ChangeDateTime="10/26/2019 22:15:01" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaTipoDocumentoRegla].[SistemaEstatusDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaTipoDocumentoRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoIDPermite" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8531ee63-71a9-40ba-ae0d-98747f7e2db6" ChangeDateTime="11/05/2019 00:50:52" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaGrupoEstatus].[ReporteID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaGrupoEstatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaGrupoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b6d8f3cb-68e2-4213-ad90-dbd7bcbf8bbd" ChangeDateTime="11/05/2019 00:54:00" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaReporteRegla].[ReporteReglaID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaReporteRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaGrupoReglaID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4b0e850c-8cc6-4086-8cdf-4bf9a92f0a89" ChangeDateTime="11/05/2019 00:55:04" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaReporteRegla].[ReporteEstatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaReporteRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GrupoEstatusID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e3b6a965-9a0c-4d19-8d08-2dbaecb4a047" ChangeDateTime="11/05/2019 16:06:09" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaGrupoEstatus].[GrupoEstatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaGrupoEstatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaGrupoEstatusID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="26f0c58d-eb0f-4c5f-841e-4d8e7c12855f" ChangeDateTime="11/05/2019 16:07:28" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaGrupoEstatus].[SistemaGrupoEstatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaGrupoEstatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GrupoEstatusID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4c7284a5-904c-4ebe-96cd-8e55747529ad" ChangeDateTime="11/05/2019 16:17:33" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaGrupoRegla].[SistemaEstatusDocumentoID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaGrupoRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaEstatusTipoDocumentoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f2449132-34ba-4e1e-a556-1494909a8230" ChangeDateTime="11/05/2019 17:44:08" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[SistemaGrupoRegla].[GrupoEstatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SistemaGrupoRegla]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SistemaGrupoEstatusID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fbda9196-af90-4028-a244-b30784ff0df8" ChangeDateTime="02/12/2023 17:12:39" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PpalCentroCosto].[Activi]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PpalCentroCosto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Activo" />
+  </Operation>
+</Operations>

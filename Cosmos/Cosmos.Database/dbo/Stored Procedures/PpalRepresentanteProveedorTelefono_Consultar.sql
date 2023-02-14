@@ -1,0 +1,9 @@
+﻿
+
+CREATE PROCEDURE [dbo].[PpalRepresentanteProveedorTelefono_Consultar]
+@PpalRepresentanteProveedorTelefonoID int
+AS
+
+SELECT  PpalRepresentanteProveedorTelefonoID,PpalRepresentanteProveedorID,EspTelefonoID,Extension,Predeterminado,Comentarios,CfgUsoTelefonoID
+FROM    PpalRepresentanteProveedorTelefono
+WHERE   PpalRepresentanteProveedorTelefonoID = @PpalRepresentanteProveedorTelefonoID

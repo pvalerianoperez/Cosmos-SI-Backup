@@ -1,0 +1,10 @@
+﻿
+
+CREATE PROCEDURE [dbo].[CmpRequisicionDetalle_ListadoRequisicionEncabezadoID]
+@CmpRequisicionEncabezadoID int
+AS
+
+SELECT  CmpRequisicionDetalleID,CmpRequisicionEncabezadoID,Renglon,PpalProductoID,Cantidad,AuxUnidadID,PpalAlmacenID,PpalConceptoEgresoID,PpalCuentaContableID,DescripcionAdicional,CfgEstatusDocumentoID
+FROM    CmpRequisicionDetalle 
+WHERE	CmpRequisicionEncabezadoID = @CmpRequisicionEncabezadoID
+ORDER	BY Renglon

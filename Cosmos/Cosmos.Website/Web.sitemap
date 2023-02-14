@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+     <siteMapNode title="Cosmos" >
+        <siteMapNode description="~//Cuenta" title="Cuenta">
+            <siteMapNode description="~//Cuenta/Login.aspx" title="Login.aspx"   />
+            <siteMapNode description="~//Cuenta/Logout.aspx" title="Logout.aspx"   />
+        </siteMapNode>
+        <siteMapNode description="~//Sistema" title="Sistema">
+            <siteMapNode description="~//Sistema/Default.aspx" title="Default.aspx"   />
+            <siteMapNode description="~//Sistema/SeleccionEmpresa.aspx" title="SeleccionEmpresa.aspx"   />
+            <siteMapNode description="~//Sistema/SeleccionModulo.aspx" title="SeleccionModulo.aspx"   />
+            <siteMapNode description="~//Sistema/Catalogos" title="Catalogos"  >
+                <siteMapNode description="~//Sistema/Catalogos/Compras" title="Compras"  >
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Almacen_Listado.aspx" title="Almacen_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Area_Listado.aspx" title="Area_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Banco_Listado.aspx" title="Banco_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/CentroCosto_Listado.aspx" title="CentroCosto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Ciudad_Listado.aspx" title="Ciudad_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ConceptoEgreso_Listado.aspx" title="ConceptoEgreso_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ConceptoIngreso_Listado.aspx" title="ConceptoIngreso_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ContactoPersonalDomicilio_Listado.aspx" title="ContactoPersonalDomicilio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ContactoPersonalMail_Listado.aspx" title="ContactoPersonalMail_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ContactoPersonalTelefono_Listado.aspx" title="ContactoPersonalTelefono_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ContactoPersonal_Listado.aspx" title="ContactoPersonal_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ControlProductoAlmacen_Listado.aspx" title="ControlProductoAlmacen_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/DatoFacturacion_Listado.aspx" title="DatoFacturacion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Domicilio_Listado.aspx" title="Domicilio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/EstadoCivil_Listado.aspx" title="EstadoCivil_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Estado_Listado.aspx" title="Estado_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/EstatusPersonal_Listado.aspx" title="EstatusPersonal_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/FamiliaProducto_Listado.aspx" title="FamiliaProducto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Fecha_Listado.aspx" title="Fecha_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Folio_Listado.aspx" title="Folio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/FormaPago_Listado.aspx" title="FormaPago_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/GiroEmpresa_Listado.aspx" title="GiroEmpresa_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/HorarioPersonal_Listado.aspx" title="HorarioPersonal_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Idioma_Listado.aspx" title="Idioma_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Marca_Listado.aspx" title="Marca_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/MedioContacto_Listado.aspx" title="MedioContacto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Municipio_Listado.aspx" title="Municipio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Pais_Listado.aspx" title="Pais_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/PersonalDomicilio_Listado.aspx" title="PersonalDomicilio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/PersonalMail_Listado.aspx" title="PersonalMail_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/PersonalTelefono_Listado.aspx" title="PersonalTelefono_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Personal_Listado.aspx" title="Personal_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Persona_Listado.aspx" title="Persona_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Producto_Listado.aspx" title="Producto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ProveedorDomicilio_Listado.aspx" title="ProveedorDomicilio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/ProveedorSucursal_Listado.aspx" title="ProveedorSucursal_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Proveedor_Listado.aspx" title="Proveedor_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Puesto_Listado.aspx" title="Puesto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/RepresentanteProveedorMail_Listado.aspx" title="RepresentanteProveedorMail_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/RepresentanteProveedorTelefono_Listado.aspx" title="RepresentanteProveedorTelefono_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/RepresentanteProveedor_Listado.aspx" title="RepresentanteProveedor_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Sucursal_Listado.aspx" title="Sucursal_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Telefono_Listado.aspx" title="Telefono_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoCliente_Listado.aspx" title="TipoCliente_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoFecha_Listado.aspx" title="TipoFecha_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoHorario_Listado.aspx" title="TipoHorario_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoMovimientoProveedor_Listado.aspx" title="TipoMovimientoProveedor_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoProducto_Listado.aspx" title="TipoProducto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoProveedor_Listado.aspx" title="TipoProveedor_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/TipoRepresentanteProveedor_Listado.aspx" title="TipoRepresentanteProveedor_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Titulo_Listado.aspx" title="Titulo_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/UnidadNegocio_Listado.aspx" title="UnidadNegocio_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Unidad_Listado.aspx" title="Unidad_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Vinculo_Listado.aspx" title="Vinculo_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Compras/Zona_Listado.aspx" title="Zona_Listado.aspx"   />
+                </siteMapNode>
+                <siteMapNode description="~//Sistema/Catalogos/Seguridad" title="Seguridad"  >
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Accion_Listado.aspx" title="Accion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Configuracion_Listado.aspx" title="Configuracion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Empresa_Listado.aspx" title="Empresa_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Modulo_Listado.aspx" title="Modulo_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/OpcionTipoOpcion_Listado.aspx" title="OpcionTipoOpcion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Opcion_Listado.aspx" title="Opcion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/PerfilOpcionAccion_Listado.aspx" title="PerfilOpcionAccion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/PerfilOpcion_Listado.aspx" title="PerfilOpcion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Perfil_Listado.aspx" title="Perfil_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/SistemaUsuario_Listado - copia.aspx" title="SistemaUsuario_Listado - copia.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/TipoOpcionAccion_Listado.aspx" title="TipoOpcionAccion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/TipoOpcion_Listado.aspx" title="TipoOpcion_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/UsuarioIntentos_Listado.aspx" title="UsuarioIntentos_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/UsuarioOpcionBitacora_Listado.aspx" title="UsuarioOpcionBitacora_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/UsuarioPerfil_Listado.aspx" title="UsuarioPerfil_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Seguridad/Usuario_Listado.aspx" title="Usuario_Listado.aspx"   />
+                </siteMapNode>
+                <siteMapNode description="~//Sistema/Catalogos/Sistema" title="Sistema"  >
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/ClaseProducto_Listado.aspx" title="ClaseProducto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/Log_Regla_Listado.aspx" title="Log_Regla_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/MetodoCosteo_Listado.aspx" title="MetodoCosteo_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/NivelProducto_Listado.aspx" title="NivelProducto_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/Parametro_Listado.aspx" title="Parametro_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/TipoDocumento_Listado.aspx" title="TipoDocumento_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/TipoMail_Listado.aspx" title="TipoMail_Listado.aspx"   />
+                    <siteMapNode description="~//Sistema/Catalogos/Sistema/TipoTelefono_Listado.aspx" title="TipoTelefono_Listado.aspx"   />
+                </siteMapNode>
+                <siteMapNode description="~//Sistema/Catalogos/Academico" title="Académico"  >
+                  <siteMapNode description="~//Sistema/Catalogos/Academico/InstitucionesEducativas_Listado.aspx" title="InstitucionesEducativas_Listado.aspx"   />
+                  <siteMapNode description="~//Sistema/Catalogos/Academico/ProgramaAcademico_Listado.aspx" title="ProgramaAcademico_Listado.aspx"   />
+                </siteMapNode>
+              <siteMapNode description="~//Sistema/Catalogos/Mensajeria" title="Mensajeria"  >
+                <siteMapNode description="~//Sistema/Catalogos/Mensajeria/Conversacion_Listado.aspx" title="Conversacion_Listado.aspx"   />
+                <siteMapNode description="~//Sistema/Catalogos/Mensajeria/Mensaje_Listado.aspx" title="Mensaje_Listado.aspx"   />
+              </siteMapNode>
+            </siteMapNode>
+        </siteMapNode>
+    </siteMapNode>
+</siteMap>

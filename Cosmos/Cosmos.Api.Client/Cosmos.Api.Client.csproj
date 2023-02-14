@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF0FDA8B-8A92-431A-A251-100D8FCF8EE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cosmos.Api.Client</RootNamespace>
+    <AssemblyName>Cosmos.Api.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppGlobals.cs" />
+    <Compile Include="Compras\Almacen\CRUDClient.cs" />
+    <Compile Include="Compras\Area\CRUDClient.cs" />
+    <Compile Include="Compras\Banco\CRUDClient.cs" />
+    <Compile Include="Compras\CentroCosto\CRUDClient.cs" />
+    <Compile Include="Compras\Ciudad\ConsultasClient.cs" />
+    <Compile Include="Compras\Ciudad\CRUDClient.cs" />
+    <Compile Include="Compras\ConceptoEgreso\CRUDClient.cs" />
+    <Compile Include="Compras\ConceptoIngreso\CRUDClient.cs" />
+    <Compile Include="Compras\ContactoPersonalDomicilio\CRUDClient.cs" />
+    <Compile Include="Compras\ContactoPersonalMail\CRUDClient.cs" />
+    <Compile Include="Compras\ContactoPersonalTelefono\CRUDClient.cs" />
+    <Compile Include="Compras\ContactoPersonal\CRUDClient.cs" />
+    <Compile Include="Compras\ControlProductoAlmacen\CRUDClient.cs" />
+    <Compile Include="Compras\DatoFacturacion\CRUDClient.cs" />
+    <Compile Include="Compras\Domicilio\CRUDClient.cs" />
+    <Compile Include="Compras\EstadoCivil\CRUDClient.cs" />
+    <Compile Include="Compras\Estado\ConsultasClient.cs" />
+    <Compile Include="Compras\Estado\CRUDClient.cs" />
+    <Compile Include="Compras\EstatusPersonal\CRUDClient.cs" />
+    <Compile Include="Compras\Fecha\CRUDClient.cs" />
+    <Compile Include="Compras\Folio\CRUDClient.cs" />
+    <Compile Include="Compras\FormaPago\CRUDClient.cs" />
+    <Compile Include="Compras\GiroEmpresa\CRUDClient.cs" />
+    <Compile Include="Compras\HorarioPersonal\CRUDClient.cs" />
+    <Compile Include="Compras\Idioma\CRUDClient.cs" />
+    <Compile Include="Compras\Marca\CRUDClient.cs" />
+    <Compile Include="Compras\MedioContacto\CRUDClient.cs" />
+    <Compile Include="Compras\Municipio\CRUDClient.cs" />
+    <Compile Include="Compras\Municipio\ConsultasClient.cs" />
+    <Compile Include="Compras\Pais\CRUDClient.cs" />
+    <Compile Include="Compras\PersonalDomicilio\CRUDClient.cs" />
+    <Compile Include="Compras\PersonalMail\CRUDClient.cs" />
+    <Compile Include="Compras\PersonalTelefono\CRUDClient.cs" />
+    <Compile Include="Compras\Personal\CRUDClient.cs" />
+    <Compile Include="Compras\Persona\CRUDClient.cs" />
+    <Compile Include="Compras\ProveedorDomicilio\CRUDClient.cs" />
+    <Compile Include="Compras\ProveedorMail\CRUDClient.cs" />
+    <Compile Include="Compras\ProveedorSucursal\CRUDClient.cs" />
+    <Compile Include="Compras\ProveedorTelefono\CRUDClient.cs" />
+    <Compile Include="Compras\Proveedor\ConsultasClient.cs" />
+    <Compile Include="Compras\Proveedor\CRUDClient.cs" />
+    <Compile Include="Compras\Puesto\CRUDClient.cs" />
+    <Compile Include="Compras\RepresentanteProveedorDomicilio\CRUDClient.cs" />
+    <Compile Include="Compras\RepresentanteProveedorMail\CRUDClient.cs" />
+    <Compile Include="Compras\RepresentanteProveedorTelefono\CRUDClient.cs" />
+    <Compile Include="Compras\RepresentanteProveedor\ConsultasClient.cs" />
+    <Compile Include="Compras\RepresentanteProveedor\CRUDClient.cs" />
+    <Compile Include="Compras\Sucursal\CRUDClient.cs" />
+    <Compile Include="Compras\Telefono\CRUDClient.cs" />
+    <Compile Include="Compras\TipoCliente\CRUDClient.cs" />
+    <Compile Include="Compras\TipoFecha\CRUDClient.cs" />
+    <Compile Include="Compras\TipoHorario\CRUDClient.cs" />
+    <Compile Include="Compras\TipoMovimientoProveedor\CRUDClient.cs" />
+    <Compile Include="Compras\TipoProducto\CRUDClient.cs" />
+    <Compile Include="Compras\TipoProveedor\CRUDClient.cs" />
+    <Compile Include="Compras\TipoRepresentanteProveedor\CRUDClient.cs" />
+    <Compile Include="Compras\Titulo\CRUDClient.cs" />
+    <Compile Include="Compras\UnidadNegocio\CRUDClient.cs" />
+    <Compile Include="Compras\Unidad\CRUDClient.cs" />
+    <Compile Include="Compras\Vinculo\CRUDClient.cs" />
+    <Compile Include="Compras\Zona\CRUDClient.cs" />
+    <Compile Include="Funciones.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\Accion\ConsultasClient.cs" />
+    <Compile Include="Seguridad\Accion\CRUDClient.cs" />
+    <Compile Include="Seguridad\Configuracion\CRUDClient.cs" />
+    <Compile Include="Seguridad\Empresa\CRUDClient.cs" />
+    <Compile Include="Seguridad\Modulo\CRUDClient.cs" />
+    <Compile Include="Seguridad\OpcionTipoOpcion\CRUDClient.cs" />
+    <Compile Include="Seguridad\Opcion\CRUDClient.cs" />
+    <Compile Include="Seguridad\Opcion\ConsultasClient.cs" />
+    <Compile Include="Seguridad\PerfilOpcionAccion\ConsultasClient.cs" />
+    <Compile Include="Seguridad\PerfilOpcionAccion\CRUDClient.cs" />
+    <Compile Include="Seguridad\PerfilOpcionAccion\OperacionesClient.cs" />
+    <Compile Include="Seguridad\PerfilOpcion\CRUDClient.cs" />
+    <Compile Include="Seguridad\Perfil\CRUDClient.cs" />
+    <Compile Include="Seguridad\TipoOpcionAccion\CRUDClient.cs" />
+    <Compile Include="Seguridad\TipoOpcion\CRUDClient.cs" />
+    <Compile Include="Seguridad\UsuarioIntentos\CRUDClient.cs" />
+    <Compile Include="Seguridad\UsuarioOpcionBitacora\CRUDClient.cs" />
+    <Compile Include="Seguridad\UsuarioPerfil\Consultas.cs" />
+    <Compile Include="Seguridad\UsuarioPerfil\CRUDClient.cs" />
+    <Compile Include="Seguridad\Usuario\ConsultasClient.cs" />
+    <Compile Include="Seguridad\Usuario\CRUDClient.cs" />
+    <Compile Include="Seguridad\Usuario\OperacionesClient.cs" />
+    <Compile Include="Sistema\ClaseProducto\CRUDClient.cs" />
+    <Compile Include="Sistema\MetodoCosteo\CRUDClient.cs" />
+    <Compile Include="Sistema\NivelProducto\CRUDClient.cs" />
+    <Compile Include="Sistema\Parametro\CRUDClient.cs" />
+    <Compile Include="Sistema\Sexo\CRUDClient.cs" />
+    <Compile Include="Sistema\TipoDocumento\CRUDClient.cs" />
+    <Compile Include="Sistema\TipoMail\CRUDClient.cs" />
+    <Compile Include="Sistema\TipoTelefono\CRUDClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cosmos.Api.Entidades\Cosmos.Api.Entidades.csproj">
+      <Project>{986f516e-75e9-45ce-adde-c310f7e4c3ee}</Project>
+      <Name>Cosmos.Api.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Entidades\Cosmos.Entidades.csproj">
+      <Project>{4b75025d-0244-4894-aa1d-3c86eec71da1}</Project>
+      <Name>Cosmos.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Framework\Cosmos.Framework.csproj">
+      <Project>{60625682-89d9-4732-8068-d0e226177a7f}</Project>
+      <Name>Cosmos.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Compras\FamiliaProducto\" />
+    <Folder Include="Compras\Producto\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

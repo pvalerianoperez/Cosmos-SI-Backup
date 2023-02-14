@@ -1,0 +1,9 @@
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\bin\Release\Cosmos.DB.dacpac
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\bin\Release\Cosmos.DB.dll
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\bin\Release\Cosmos.DB.pdb
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Release\Model.xml
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Release\refactor.xml
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Release\postdeploy.sql
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Release\predeploy.sql
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Release\Cosmos.DB.dll
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Release\Cosmos.DB.pdb

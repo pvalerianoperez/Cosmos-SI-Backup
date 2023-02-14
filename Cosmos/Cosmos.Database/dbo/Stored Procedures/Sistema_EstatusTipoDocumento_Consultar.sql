@@ -1,0 +1,9 @@
+﻿
+
+CREATE PROCEDURE Sistema_EstatusTipoDocumento_Consultar
+@SistemaEstatusTipoDocumentoID int
+AS
+
+SELECT  SistemaEstatusTipoDocumentoID,SistemaEstatusDocumentoID,TipoDocumentoID
+FROM    SistemaEstatusTipoDocumento
+WHERE   SistemaEstatusTipoDocumentoID = @SistemaEstatusTipoDocumentoID

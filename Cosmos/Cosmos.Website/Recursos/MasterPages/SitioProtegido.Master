@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitioProtegido.master.cs" Inherits="Cosmos.Website.Recursos.MasterPages.SitioProtegido" %>
+<%@ Register assembly="DevExpress.Web.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+<%@ Register src="../UserControls/ucSeleccionModulo.ascx" tagname="ucSeleccionModulo" tagprefix="uc1" %>
+<%@ Register src="../UserControls/ucUsuario.ascx" tagname="ucUsuario" tagprefix="uc2" %>
+<%@ Register src="../UserControls/ucSeleccionEmpresa.ascx" tagname="ucSeleccionEmpresa" tagprefix="uc3" %>
+<%@ Register src="../UserControls/ucMenuAcciones.ascx" tagname="ucMenuAcciones" tagprefix="uc4" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function MenuItemClick(e) {
+            
+            if (e.item.name == "mnSistema") {
+                PopupSistema.Show();
+            }
+            if (e.item.name == "mnEmpresa") {
+                PopupEmpresa.Show();
+            }
+            if (e.item.name == "mnModulo") {
+                PopupSistema.Show();
+            }
+            if (e.item.name == "mnUsuario") {
+                PopupUsuario.Show();
+            }
+            if (e.item.name == "mnSalir") {
+                window.top.location.href="/Cuenta/Logout.aspx";
+            }
+        }
+        
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        setInterval(function () {
+            window.open('<%=Page.ResolveUrl("~/Sistema/KeepAlive.aspx")%>', 'iKeepAlive');
+        }, 10000);
+    </script>
+    <form id="form1" runat="server">
+    
+    <div id="divEncabezado" class="dxmLite_DevEx" runat="server">
+        <div class="menuDiv"  >
+            <div class="menuLogo">
+                <asp:HyperLink runat="server" ID="hlLogo" NavigateUrl="~/Sistema/Default.aspx" ImageUrl="~/Recursos/Imagenes/LogoPrincipal.png" BorderStyle="None" Height="32px"></asp:HyperLink>
+            </div>
+            <div class="menuOpciones">
+                <dx:ASPxMenu ID="ASPxMenu1" runat="server" ClientInstanceName="ASPxMenu1" ItemStyle-VerticalAlign="Middle" Theme="DevEx" >
+                <ItemStyle CssClass="alignText" Height="40px" />
+                <ClientSideEvents ItemClick="function(s, e) {MenuItemClick(e);}" />
+                    <Border BorderStyle="None" />
+                </dx:ASPxMenu>
+            </div>
+            <div class="menuUsuario">
+                <dx:ASPxMenu ID="ASPxMenu2" runat="server" ClientInstanceName="ASPxMenu1" ItemStyle-VerticalAlign="Middle" Theme="DevEx" >
+                <ItemStyle CssClass="alignText" Height="40px" />
+                <ClientSideEvents ItemClick="function(s, e) {MenuItemClick(e);}" />
+                    <Border BorderStyle="None" />
+                    <Items>
+                        <dx:MenuItem Text="Humberto Martinez Garza" Name="mnUsuario" ItemStyle-Width="120px">
+                            <Image IconID="businessobjects_boperson_16x16">
+                            </Image>
+                            <ItemStyle Width="120px"></ItemStyle>
+                        </dx:MenuItem>
+                        <dx:MenuItem Text="EMPRESA SA DE CV" Name="mnEmpresa" ItemStyle-Width="120px" BeginGroup="True" >
+                            <Image IconID="navigation_documentmap_16x16">
+                            </Image>
+                            <ItemStyle Width="120px"></ItemStyle>
+                        </dx:MenuItem>
+                        <dx:MenuItem Text="MODULO NOMBRE" Name="mnModulo" ItemStyle-Width="120px">
+                            <Image IconID="businessobjects_boproduct_16x16">
+                            </Image>
+                            <ItemStyle Width="120px"></ItemStyle>
+                        </dx:MenuItem>
+                        <dx:MenuItem Text="Salir" Name="mnSalir" ItemStyle-Width="120px" BeginGroup="True" >
+                            <Image IconID="actions_cancel_16x16">
+                            </Image>
+                            <ItemStyle Width="120px"></ItemStyle>
+                        </dx:MenuItem>
+                    </Items>
+                </dx:ASPxMenu>                
+            </div>
+        </div>    
+        <div class="dxgvHeader_Aqua" style="width:99%;margin:auto;">        
+            <uc4:ucMenuAcciones ID="ucMenuAcciones1" runat="server" />
+        </div>
+    </div>
+    <div class="contenidoDiv">
+        <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <dx:ASPxPopupControl ID="PopupSistema" runat="server" ClientInstanceName="PopupSistema" Modal="true" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Height="400px" ScrollBars="None" Width="750px"  ShowHeader="False">
+        <ContentCollection>
+            <dx:PopupControlContentControl runat="server">
+                <uc1:ucSeleccionModulo ID="ucSeleccionModulo1" runat="server" /><br />
+            </dx:PopupControlContentControl>
+        </ContentCollection>
+    </dx:ASPxPopupControl>
+
+    <dx:ASPxPopupControl ID="PopupEmpresa" runat="server" ClientInstanceName="PopupEmpresa" Modal="true" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Height="300px" ScrollBars="None" Width="750px" ShowHeader="False">
+        <ContentCollection>
+            <dx:PopupControlContentControl runat="server">    
+                <uc3:ucSeleccionEmpresa ID="ucSeleccionEmpresa1" runat="server" />    
+            </dx:PopupControlContentControl>
+        </ContentCollection>
+    </dx:ASPxPopupControl>
+    <dx:ASPxHiddenField runat="server" ID="hfAcciones" ClientInstanceName="hfAcciones"></dx:ASPxHiddenField>
+    <iframe name="iKeepAlive" id="iKeepAlive" width="1" height="1" frameborder="0"></iframe>
+    </form>
+</body>
+</html>

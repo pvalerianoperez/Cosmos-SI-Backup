@@ -1,0 +1,20 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Cosmos.Api.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Bk" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=XPS13;Initial Catalog=DB_9E35A8_Cosmos;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</Value>
+    </Setting>
+    <Setting Name="temp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100devData Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100dev</Value>
+    </Setting>
+    <Setting Name="Sistema" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=XPS13;Initial Catalog=DB_9E35A8_Cosmos;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=XPS13;Initial Catalog=DB_9E35A8_Cosmos;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

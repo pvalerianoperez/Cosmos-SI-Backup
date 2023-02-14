@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Cosmos.Api.Properties.Settings.Sistema-Web.config Connection String" description="Cosmos.Api.Properties.Settings.Sistema Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=sql5041.site4now.net;Initial Catalog=DB_9E35A8_Cosmos;User ID=DB_9E35A8_Cosmos_admin;Password=ncuatro100dev" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Dell\\Documents\\cosmoscsi\\Cosmos-SI\\v1\.0\\Codigo\\Cosmos\\Cosmos\.Api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Cosmos.Api.Properties.Settings.Sistema']/@connectionString" />
+  </parameter>
+</parameters>

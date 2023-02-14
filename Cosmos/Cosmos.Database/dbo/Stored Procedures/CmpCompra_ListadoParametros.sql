@@ -1,0 +1,93 @@
+﻿
+
+CREATE PROCEDURE [dbo].[CmpCompra_ListadoParametros]
+@TipoDocumentoID int,
+@SucursalInicialID int,
+@SucursalFinalID int,
+@FechaInicial DateTime,
+@FechaFinal DateTime,
+@ProveedorID int,
+@SerieInicialID int,
+@SerieFinalID int
+-- Parámetros para Bitácora
+	,@UsuarioIDBitcora		int
+	,@DescripcionBitacora	varchar(500)	= null
+	,@IpAddress				varchar(40)		= null
+	,@HostName				varchar(50)		= null
+
+AS
+-- Variables para manejo de Errores
+DECLARE @Errores int = 0, @Mensaje nvarchar(300)
+-- Variables para Bitácora          
+DECLARE @TablaNombreBitacora   nvarchar(100) = 'CmpCompraEncabezado',	
+		@Operacion	nvarchar(20) = 'Read', 
+		@logMessage	varchar(Max) = '',
+		@isChangeBeLogged bit
+
+SET NOCOUNT ON 
+SET XACT_ABORT ON;
+BEGIN TRY
+	BEGIN TRANSACTION
+
+	SELECT CCE.CmpCompraEncabezadoID,							MAX(PSu.Nombre) AS SucursalNombre,				
+		MAX(PSe.PpalSerieClave) AS SerieClave,						MAX(CCE.Folio) AS Folio,
+		MAX(CCE.Fecha) as Fecha,									MAX(CED.Nombre) AS EstatusNombre,
+		MAX(EP.RazonSocial) as ProveedorNombre,
+		SUM(CCD.Cantidad * CCD.Costo) as ImporteTotal
+	  FROM CmpCompraEncabezado CCE
+		LEFT OUTER JOIN PpalSucursal PSu ON CCE.PpalSucursalID = PSu.PpalSucursalID
+		LEFT OUTER JOIN PpalSerie PSe ON CCE.PpalSerieID = PSe.PpalSerieID
+		LEFT OUTER JOIN PpalProveedor PP ON CCE.PpalProveedorID = PP.PpalProveedorID
+		LEFT OUTER JOIN CfgEstatusDocumento CED ON CCE.CfgEstatusDocumentoID = CED.CfgEstatusDocumentoID
+		LEFT OUTER JOIN EspPersona EP ON PP.EspPersonaID = EP.EspPersonaID
+		LEFT OUTER JOIN CmpCompraDetalle CCD ON CCE.CmpCompraEncabezadoID = CCD.CmpCompraEncabezadoID
+	 WHERE CCE.TipoDocumentoID = @TipoDocumentoID
+		AND PSu.PpalSucursalClave Between (SELECT PpalSucursalClave FROM PpalSucursal WHERE PpalSucursal.PpalSucursalID = @SucursalInicialID) AND
+									(SELECT PpalSucursalClave FROM PpalSucursal WHERE PpalSucursal.PpalSucursalID = @SucursalFinalID)					
+		AND CCE.Fecha Between @FechaInicial and @FechaFinal
+		AND (CCE.PpalProveedorID = @ProveedorID or @ProveedorID = 0)
+		AND PSe.PpalSerieClave Between (SELECT PpalSerieClave FROM PpalSerie WHERE PpalSerie.PpalSerieID = @SerieInicialID) AND
+									(SELECT PpalSerieClave FROM PpalSerie WHERE PpalSerie.PpalSerieID = @SerieFinalID)					
+	GROUP BY CCE.CmpCompraEncabezadoID
+	/* Procesa Bitácora */
+	-- Revisa si el cambio debe ser guardado en Bitácora
+	EXEC	@isChangeBeLogged	=   SistemaLogRegla_Consultar_LogBit
+			@UsuarioID			=	@UsuarioIDBitcora,
+			@TablaNombre		=   @TablaNombreBitacora,
+			@Operacion			=	@Operacion
+
+	-- Si el cambio debe guardarse, prepara variables de Bitácora y lo guarda
+	IF @isChangeBeLogged = 1 And @@RowCount > 0
+	BEGIN
+		-- logMessage = Parámetros de Listado
+		SET @logMessage =  Concat('SucursalInicial::', @SucursalInicialID, ':',0, ';')
+
+		-- Guarda en Bitácora
+		EXEC 	 [dbo].[SistemaLog_Guardar] @TablaNombre		= @TablaNombreBitacora
+												,@TablaID			= 0
+												,@TablaColumna1		= ''
+												,@TablaColumna2		= ''
+												,@Operacion			= @Operacion
+												,@UsuarioID			= @UsuarioIDBitcora
+												,@Descripcion		= @DescripcionBitacora
+												,@Cambios			= @logMessage
+												,@IpAddress			= @IpAddress
+												,@HostName			= @HostName
+	END
+	-- Si no hubo errores -> COMMIT
+	COMMIT TRANSACTION
+END TRY
+-- Si hubo error los procesa y lo regresa
+BEGIN CATCH
+	IF (XACT_STATE()) = -1 ROLLBACK TRANSACTION;
+	IF (XACT_STATE()) = 1 COMMIT TRANSACTION;
+    SELECT @Errores = ERROR_NUMBER(), 
+			@Mensaje = dbo.FDecodificaError(ERROR_NUMBER(), ERROR_MESSAGE(), ERROR_SEVERITY(), ERROR_STATE(), ERROR_PROCEDURE(), ERROR_LINE())
+END CATCH 
+
+SELECT  COALESCE(@Errores, 0) as Errores, 
+        COALESCE(@Mensaje, '') as Mensaje,
+		COALESCE(ERROR_SEVERITY(), 0) as Severidad,
+		COALESCE(ERROR_STATE(), 0) as Estado,
+		COALESCE(ERROR_PROCEDURE(), '') as ProcedimientoAlmacenado,
+		COALESCE(ERROR_LINE(), 0) as Linea

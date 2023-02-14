@@ -1,0 +1,6 @@
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\bin\Debug\Cosmos.DB.dacpac
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\bin\Debug\Cosmos.DB.dll
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\bin\Debug\Cosmos.DB.pdb
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Debug\Cosmos.DB.sqlproj.AssemblyReference.cache
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Debug\Cosmos.DB.dll
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.DB\obj\Debug\Cosmos.DB.pdb

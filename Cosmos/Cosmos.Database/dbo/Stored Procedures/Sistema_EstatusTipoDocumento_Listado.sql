@@ -1,0 +1,7 @@
+﻿
+
+CREATE PROCEDURE Sistema_EstatusTipoDocumento_Listado
+AS
+
+SELECT  SistemaEstatusTipoDocumentoID,SistemaEstatusDocumentoID,TipoDocumentoID
+FROM    SistemaEstatusTipoDocumento

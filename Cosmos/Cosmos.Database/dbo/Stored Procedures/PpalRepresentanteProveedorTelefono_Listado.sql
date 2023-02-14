@@ -1,0 +1,7 @@
+﻿
+
+CREATE PROCEDURE [dbo].[PpalRepresentanteProveedorTelefono_Listado]
+AS
+
+SELECT  PpalRepresentanteProveedorTelefonoID,PpalRepresentanteProveedorID,EspTelefonoID,Extension,Predeterminado,Comentarios,CfgUsoTelefonoID
+FROM    PpalRepresentanteProveedorTelefono

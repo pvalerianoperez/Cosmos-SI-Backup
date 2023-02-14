@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cosmos.Website</RootNamespace>
+    <AssemblyName>Cosmos.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web.WebForms, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cuenta\Login.aspx" />
+    <Content Include="Cuenta\Logout.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\Css\sweetalert.css" />
+    <Content Include="Recursos\Imagenes\Empresa\1.png" />
+    <Content Include="Recursos\Imagenes\Empresa\2.png" />
+    <Content Include="Recursos\Imagenes\Modulo\4.png" />
+    <Content Include="Recursos\Imagenes\Empresa\NoEncontrado.png" />
+    <Content Include="Recursos\Imagenes\FondoMenuPrincipal.png" />
+    <Content Include="Recursos\Imagenes\FondoPantalla.png" />
+    <Content Include="Recursos\Imagenes\LogoPrincipal.png" />
+    <Content Include="Recursos\Imagenes\Menu\mnSistema.png" />
+    <Content Include="Recursos\Imagenes\Modulo\1.png" />
+    <Content Include="Recursos\Imagenes\Modulo\2.png" />
+    <Content Include="Recursos\Imagenes\Modulo\5.png" />
+    <Content Include="Recursos\Imagenes\Modulo\NoEncontrado.png" />
+    <Content Include="Recursos\Imagenes\Splash.png" />
+    <Content Include="Recursos\MasterPages\SitioProtegido.Master" />
+    <None Include="Properties\PublishProfiles\WebsiteLocal.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Recursos\Reportes\ReportViewer.aspx" />
+    <Content Include="Recursos\Reportes\WebForm1.aspx" />
+    <Content Include="scripts\jquery-3.3.1.min.map" />
+    <Content Include="scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Recursos\Fonts\Oswald-Bold.ttf" />
+    <Content Include="Recursos\Fonts\Oswald-Light.ttf" />
+    <Content Include="Recursos\Fonts\Oswald-Regular.ttf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="scripts\sweetalert.min.js" />
+    <Content Include="Sistema\Catalogos\Academico\InstitucionEducativa_Listado.aspx" />
+    <Content Include="Sistema\Compras\Capturas\Documento_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Almacen_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Banco_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Ciudad_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\ConceptoEgreso_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\ConceptoIngreso_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\CuentaContable_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\EstadoCivil_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Estado_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\EstatusDocumento_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\EstatusPersonal_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Fecha_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\FormaPago_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\GiroEmpresa_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\HorarioPersonal_Listado.aspx" />
+    <Content Include="Sistema\Compras\Capturas\OrdenesCompra.aspx" />
+    <Content Include="Sistema\Compras\Capturas\Requisiciones.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Idioma_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Marca_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\MedioContacto_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Municipio_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Personal_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Profesion_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Serie_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoCliente_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoFecha_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoHorario_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoMovimientoProveedor_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoProducto_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoProveedor_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\TipoRepresentanteProveedor_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Titulo_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\UnidadNegocio_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Unidad_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\UsuarioEstatusDocumentoPermiso_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\UsuarioTipoDocumentoPermiso_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Vinculo_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Zona_Listado.aspx" />
+    <Content Include="Sistema\KeepAlive.aspx" />
+    <Content Include="Sistema\Seguridad\Catalogos\Perfil_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\BitacoraEstatus_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\ClaseProducto_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\EstatusDocumento_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\EstatusProducto_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\EstatusRegla_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\EstatusTelefono_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\EstatusTipoDocumento_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\GrupoEstatus_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\GrupoRegla_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\Grupo_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\LogRegla_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\MetodoCosteo_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\Naturaleza_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\NivelProducto_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\Parametro_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\PersonalTipoContacto_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\Sexo_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\TipoDocumentoRegla_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\TipoDocumento_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\TipoMail_Listado.aspx" />
+    <Content Include="Sistema\Sistema\Catalogos\TipoTelefono_Listado.aspx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\Css\Sitio.css" />
+    <Content Include="Recursos\UserControls\ucMenuAcciones.ascx" />
+    <Content Include="Recursos\UserControls\ucSeleccionEmpresa.ascx" />
+    <Content Include="Recursos\UserControls\ucSeleccionModulo.ascx" />
+    <Content Include="Recursos\UserControls\ucUsuario.ascx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <None Include="scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="scripts\jquery-3.3.1.js" />
+    <Content Include="scripts\jquery-3.3.1.min.js" />
+    <Content Include="scripts\jquery-3.3.1.slim.js" />
+    <Content Include="scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Sistema\Compras\Catalogos\Area_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\CentroCosto_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Compras\ControlProductoAlmacen_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Compras\DatoFacturacion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Compras\Domicilio_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Compras\EstatusPersonal_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Compras\FamiliaProducto_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Pais_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Compras\Persona_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Producto_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Proveedor_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Puesto_Listado.aspx" />
+    <Content Include="Sistema\Compras\Catalogos\Sucursal_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Accion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Configuracion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Empresa_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Modulo_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\OpcionTipoOpcion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Opcion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\PerfilOpcionAccion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\PerfilOpcion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Perfil_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\TipoOpcion_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\UsuarioIntentos_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\UsuarioOpcionBitacora_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\UsuarioPerfil_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Seguridad\Usuario_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Sistema\ClaseProducto_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Sistema\MetodoCosteo_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Sistema\NivelProducto_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Sistema\TipoMail_Listado.aspx" />
+    <Content Include="Sistema\Catalogos\Sistema\TipoTelefono_Listado.aspx" />
+    <Content Include="Sistema\Default.aspx" />
+    <Content Include="Sistema\SeleccionEmpresa.aspx" />
+    <Content Include="Sistema\SeleccionModulo.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cuenta\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\MasterPages\SitioProtegido.Master.cs">
+      <DependentUpon>SitioProtegido.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\MasterPages\SitioProtegido.Master.designer.cs">
+      <DependentUpon>SitioProtegido.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\Reportes\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\Reportes\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\Reportes\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\Reportes\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\Reportes\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Recursos\Reportes\XtraReport2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucMenuAcciones.ascx.cs">
+      <DependentUpon>ucMenuAcciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucMenuAcciones.ascx.designer.cs">
+      <DependentUpon>ucMenuAcciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucSeleccionEmpresa.ascx.cs">
+      <DependentUpon>ucSeleccionEmpresa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucSeleccionEmpresa.ascx.designer.cs">
+      <DependentUpon>ucSeleccionEmpresa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucSeleccionModulo.ascx.cs">
+      <DependentUpon>ucSeleccionModulo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucSeleccionModulo.ascx.designer.cs">
+      <DependentUpon>ucSeleccionModulo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucUsuario.ascx.cs">
+      <DependentUpon>ucUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos\UserControls\ucUsuario.ascx.designer.cs">
+      <DependentUpon>ucUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\Utilerias\AppGlobals.cs" />
+    <Compile Include="Recursos\Utilerias\Funciones.cs" />
+    <Compile Include="Sistema\Catalogos\Academico\InstitucionEducativa_Listado.aspx.cs">
+      <DependentUpon>InstitucionEducativa_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Academico\InstitucionEducativa_Listado.aspx.designer.cs">
+      <DependentUpon>InstitucionEducativa_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Capturas\Documento_Listado.aspx.cs">
+      <DependentUpon>Documento_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Capturas\Documento_Listado.aspx.designer.cs">
+      <DependentUpon>Documento_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Almacen_Listado.aspx.cs">
+      <DependentUpon>Almacen_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Almacen_Listado.aspx.designer.cs">
+      <DependentUpon>Almacen_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Area_Listado.aspx.cs">
+      <DependentUpon>Area_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Area_Listado.aspx.designer.cs">
+      <DependentUpon>Area_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Banco_Listado.aspx.cs">
+      <DependentUpon>Banco_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Banco_Listado.aspx.designer.cs">
+      <DependentUpon>Banco_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\CentroCosto_Listado.aspx.cs">
+      <DependentUpon>CentroCosto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\CentroCosto_Listado.aspx.designer.cs">
+      <DependentUpon>CentroCosto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\ControlProductoAlmacen_Listado.aspx.cs">
+      <DependentUpon>ControlProductoAlmacen_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\ControlProductoAlmacen_Listado.aspx.designer.cs">
+      <DependentUpon>ControlProductoAlmacen_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\DatoFacturacion_Listado.aspx.cs">
+      <DependentUpon>DatoFacturacion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\DatoFacturacion_Listado.aspx.designer.cs">
+      <DependentUpon>DatoFacturacion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\Domicilio_Listado.aspx.cs">
+      <DependentUpon>Domicilio_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\Domicilio_Listado.aspx.designer.cs">
+      <DependentUpon>Domicilio_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\EstatusPersonal_Listado.aspx.cs">
+      <DependentUpon>EstatusPersonal_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\EstatusPersonal_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusPersonal_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\FamiliaProducto_Listado.aspx.cs">
+      <DependentUpon>FamiliaProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\FamiliaProducto_Listado.aspx.designer.cs">
+      <DependentUpon>FamiliaProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Ciudad_Listado.aspx.cs">
+      <DependentUpon>Ciudad_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Ciudad_Listado.aspx.designer.cs">
+      <DependentUpon>Ciudad_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\ConceptoEgreso_Listado.aspx.cs">
+      <DependentUpon>ConceptoEgreso_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\ConceptoEgreso_Listado.aspx.designer.cs">
+      <DependentUpon>ConceptoEgreso_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\ConceptoIngreso_Listado.aspx.cs">
+      <DependentUpon>ConceptoIngreso_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\ConceptoIngreso_Listado.aspx.designer.cs">
+      <DependentUpon>ConceptoIngreso_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\CuentaContable_Listado.aspx.cs">
+      <DependentUpon>CuentaContable_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\CuentaContable_Listado.aspx.designer.cs">
+      <DependentUpon>CuentaContable_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\EstadoCivil_Listado.aspx.cs">
+      <DependentUpon>EstadoCivil_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\EstadoCivil_Listado.aspx.designer.cs">
+      <DependentUpon>EstadoCivil_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Estado_Listado.aspx.cs">
+      <DependentUpon>Estado_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Estado_Listado.aspx.designer.cs">
+      <DependentUpon>Estado_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\EstatusDocumento_Listado.aspx.cs">
+      <DependentUpon>EstatusDocumento_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\EstatusDocumento_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusDocumento_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\EstatusPersonal_Listado.aspx.cs">
+      <DependentUpon>EstatusPersonal_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\EstatusPersonal_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusPersonal_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Fecha_Listado.aspx.cs">
+      <DependentUpon>Fecha_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Fecha_Listado.aspx.designer.cs">
+      <DependentUpon>Fecha_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\FormaPago_Listado.aspx.cs">
+      <DependentUpon>FormaPago_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\FormaPago_Listado.aspx.designer.cs">
+      <DependentUpon>FormaPago_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\GiroEmpresa_Listado.aspx.cs">
+      <DependentUpon>GiroEmpresa_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\GiroEmpresa_Listado.aspx.designer.cs">
+      <DependentUpon>GiroEmpresa_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\HorarioPersonal_Listado.aspx.cs">
+      <DependentUpon>HorarioPersonal_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\HorarioPersonal_Listado.aspx.designer.cs">
+      <DependentUpon>HorarioPersonal_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Municipio_Listado.aspx.cs">
+      <DependentUpon>Municipio_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Municipio_Listado.aspx.designer.cs">
+      <DependentUpon>Municipio_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Pais_Listado.aspx.cs">
+      <DependentUpon>Pais_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Pais_Listado.aspx.designer.cs">
+      <DependentUpon>Pais_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\Persona_Listado.aspx.cs">
+      <DependentUpon>Persona_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Compras\Persona_Listado.aspx.designer.cs">
+      <DependentUpon>Persona_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Idioma_Listado.aspx.cs">
+      <DependentUpon>Idioma_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Idioma_Listado.aspx.designer.cs">
+      <DependentUpon>Idioma_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Marca_Listado.aspx.cs">
+      <DependentUpon>Marca_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Marca_Listado.aspx.designer.cs">
+      <DependentUpon>Marca_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\MedioContacto_Listado.aspx.cs">
+      <DependentUpon>MedioContacto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\MedioContacto_Listado.aspx.designer.cs">
+      <DependentUpon>MedioContacto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Personal_Listado.aspx.cs">
+      <DependentUpon>Personal_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Personal_Listado.aspx.designer.cs">
+      <DependentUpon>Personal_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Producto_Listado.aspx.cs">
+      <DependentUpon>Producto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Producto_Listado.aspx.designer.cs">
+      <DependentUpon>Producto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Proveedor_Listado.aspx.cs">
+      <DependentUpon>Proveedor_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Proveedor_Listado.aspx.designer.cs">
+      <DependentUpon>Proveedor_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Profesion_Listado.aspx.cs">
+      <DependentUpon>Profesion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Profesion_Listado.aspx.designer.cs">
+      <DependentUpon>Profesion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Puesto_Listado.aspx.cs">
+      <DependentUpon>Puesto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Puesto_Listado.aspx.designer.cs">
+      <DependentUpon>Puesto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Serie_Listado.aspx.cs">
+      <DependentUpon>Serie_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Serie_Listado.aspx.designer.cs">
+      <DependentUpon>Serie_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Sucursal_Listado.aspx.cs">
+      <DependentUpon>Sucursal_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Sucursal_Listado.aspx.designer.cs">
+      <DependentUpon>Sucursal_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Accion_Listado.aspx.cs">
+      <DependentUpon>Accion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Accion_Listado.aspx.designer.cs">
+      <DependentUpon>Accion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Configuracion_Listado.aspx.cs">
+      <DependentUpon>Configuracion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Configuracion_Listado.aspx.designer.cs">
+      <DependentUpon>Configuracion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Empresa_Listado.aspx.cs">
+      <DependentUpon>Empresa_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Empresa_Listado.aspx.designer.cs">
+      <DependentUpon>Empresa_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Modulo_Listado.aspx.cs">
+      <DependentUpon>Modulo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Modulo_Listado.aspx.designer.cs">
+      <DependentUpon>Modulo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\OpcionTipoOpcion_Listado.aspx.cs">
+      <DependentUpon>OpcionTipoOpcion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\OpcionTipoOpcion_Listado.aspx.designer.cs">
+      <DependentUpon>OpcionTipoOpcion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Opcion_Listado.aspx.cs">
+      <DependentUpon>Opcion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Opcion_Listado.aspx.designer.cs">
+      <DependentUpon>Opcion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\PerfilOpcionAccion_Listado.aspx.cs">
+      <DependentUpon>PerfilOpcionAccion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\PerfilOpcionAccion_Listado.aspx.designer.cs">
+      <DependentUpon>PerfilOpcionAccion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\PerfilOpcion_Listado.aspx.cs">
+      <DependentUpon>PerfilOpcion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\PerfilOpcion_Listado.aspx.designer.cs">
+      <DependentUpon>PerfilOpcion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Perfil_Listado.aspx.cs">
+      <DependentUpon>Perfil_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Perfil_Listado.aspx.designer.cs">
+      <DependentUpon>Perfil_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\TipoOpcion_Listado.aspx.cs">
+      <DependentUpon>TipoOpcion_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\TipoOpcion_Listado.aspx.designer.cs">
+      <DependentUpon>TipoOpcion_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\UsuarioIntentos_Listado.aspx.cs">
+      <DependentUpon>UsuarioIntentos_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\UsuarioIntentos_Listado.aspx.designer.cs">
+      <DependentUpon>UsuarioIntentos_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\UsuarioOpcionBitacora_Listado.aspx.cs">
+      <DependentUpon>UsuarioOpcionBitacora_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\UsuarioOpcionBitacora_Listado.aspx.designer.cs">
+      <DependentUpon>UsuarioOpcionBitacora_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\UsuarioPerfil_Listado.aspx.cs">
+      <DependentUpon>UsuarioPerfil_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\UsuarioPerfil_Listado.aspx.designer.cs">
+      <DependentUpon>UsuarioPerfil_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Usuario_Listado.aspx.cs">
+      <DependentUpon>Usuario_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Seguridad\Usuario_Listado.aspx.designer.cs">
+      <DependentUpon>Usuario_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\ClaseProducto_Listado.aspx.cs">
+      <DependentUpon>ClaseProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\ClaseProducto_Listado.aspx.designer.cs">
+      <DependentUpon>ClaseProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\MetodoCosteo_Listado.aspx.cs">
+      <DependentUpon>MetodoCosteo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\MetodoCosteo_Listado.aspx.designer.cs">
+      <DependentUpon>MetodoCosteo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\NivelProducto_Listado.aspx.cs">
+      <DependentUpon>NivelProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\NivelProducto_Listado.aspx.designer.cs">
+      <DependentUpon>NivelProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\TipoMail_Listado.aspx.cs">
+      <DependentUpon>TipoMail_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\TipoMail_Listado.aspx.designer.cs">
+      <DependentUpon>TipoMail_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\TipoTelefono_Listado.aspx.cs">
+      <DependentUpon>TipoTelefono_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Catalogos\Sistema\TipoTelefono_Listado.aspx.designer.cs">
+      <DependentUpon>TipoTelefono_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Capturas\OrdenesCompra.aspx.cs">
+      <DependentUpon>OrdenesCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Capturas\OrdenesCompra.aspx.designer.cs">
+      <DependentUpon>OrdenesCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Capturas\Requisiciones.aspx.cs">
+      <DependentUpon>Requisiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Capturas\Requisiciones.aspx.designer.cs">
+      <DependentUpon>Requisiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoCliente_Listado.aspx.cs">
+      <DependentUpon>TipoCliente_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoCliente_Listado.aspx.designer.cs">
+      <DependentUpon>TipoCliente_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoFecha_Listado.aspx.cs">
+      <DependentUpon>TipoFecha_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoFecha_Listado.aspx.designer.cs">
+      <DependentUpon>TipoFecha_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoHorario_Listado.aspx.cs">
+      <DependentUpon>TipoHorario_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoHorario_Listado.aspx.designer.cs">
+      <DependentUpon>TipoHorario_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoMovimientoProveedor_Listado.aspx.cs">
+      <DependentUpon>TipoMovimientoProveedor_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoMovimientoProveedor_Listado.aspx.designer.cs">
+      <DependentUpon>TipoMovimientoProveedor_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoProducto_Listado.aspx.cs">
+      <DependentUpon>TipoProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoProducto_Listado.aspx.designer.cs">
+      <DependentUpon>TipoProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoProveedor_Listado.aspx.cs">
+      <DependentUpon>TipoProveedor_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoProveedor_Listado.aspx.designer.cs">
+      <DependentUpon>TipoProveedor_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoRepresentanteProveedor_Listado.aspx.cs">
+      <DependentUpon>TipoRepresentanteProveedor_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\TipoRepresentanteProveedor_Listado.aspx.designer.cs">
+      <DependentUpon>TipoRepresentanteProveedor_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Titulo_Listado.aspx.cs">
+      <DependentUpon>Titulo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Titulo_Listado.aspx.designer.cs">
+      <DependentUpon>Titulo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\UnidadNegocio_Listado.aspx.cs">
+      <DependentUpon>UnidadNegocio_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\UnidadNegocio_Listado.aspx.designer.cs">
+      <DependentUpon>UnidadNegocio_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Unidad_Listado.aspx.cs">
+      <DependentUpon>Unidad_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Unidad_Listado.aspx.designer.cs">
+      <DependentUpon>Unidad_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\UsuarioEstatusDocumentoPermiso_Listado.aspx.cs">
+      <DependentUpon>UsuarioEstatusDocumentoPermiso_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\UsuarioEstatusDocumentoPermiso_Listado.aspx.designer.cs">
+      <DependentUpon>UsuarioEstatusDocumentoPermiso_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\UsuarioTipoDocumentoPermiso_Listado.aspx.cs">
+      <DependentUpon>UsuarioTipoDocumentoPermiso_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\UsuarioTipoDocumentoPermiso_Listado.aspx.designer.cs">
+      <DependentUpon>UsuarioTipoDocumentoPermiso_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Vinculo_Listado.aspx.cs">
+      <DependentUpon>Vinculo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Vinculo_Listado.aspx.designer.cs">
+      <DependentUpon>Vinculo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Zona_Listado.aspx.cs">
+      <DependentUpon>Zona_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Catalogos\Zona_Listado.aspx.designer.cs">
+      <DependentUpon>Zona_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Compras\Reportes\ReporteEjemplo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Compras\Reportes\TipoCliente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\KeepAlive.aspx.cs">
+      <DependentUpon>KeepAlive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\KeepAlive.aspx.designer.cs">
+      <DependentUpon>KeepAlive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Seguridad\Catalogos\Perfil_Listado.aspx.cs">
+      <DependentUpon>Perfil_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Seguridad\Catalogos\Perfil_Listado.aspx.designer.cs">
+      <DependentUpon>Perfil_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\SeleccionEmpresa.aspx.cs">
+      <DependentUpon>SeleccionEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\SeleccionEmpresa.aspx.designer.cs">
+      <DependentUpon>SeleccionEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\SeleccionModulo.aspx.cs">
+      <DependentUpon>SeleccionModulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\SeleccionModulo.aspx.designer.cs">
+      <DependentUpon>SeleccionModulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\BitacoraEstatus_Listado.aspx.cs">
+      <DependentUpon>BitacoraEstatus_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\BitacoraEstatus_Listado.aspx.designer.cs">
+      <DependentUpon>BitacoraEstatus_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\ClaseProducto_Listado.aspx.cs">
+      <DependentUpon>ClaseProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\ClaseProducto_Listado.aspx.designer.cs">
+      <DependentUpon>ClaseProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusDocumento_Listado.aspx.cs">
+      <DependentUpon>EstatusDocumento_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusDocumento_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusDocumento_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusProducto_Listado.aspx.cs">
+      <DependentUpon>EstatusProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusProducto_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusRegla_Listado.aspx.cs">
+      <DependentUpon>EstatusRegla_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusRegla_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusRegla_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusTelefono_Listado.aspx.cs">
+      <DependentUpon>EstatusTelefono_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusTelefono_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusTelefono_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusTipoDocumento_Listado.aspx.cs">
+      <DependentUpon>EstatusTipoDocumento_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\EstatusTipoDocumento_Listado.aspx.designer.cs">
+      <DependentUpon>EstatusTipoDocumento_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\GrupoEstatus_Listado.aspx.cs">
+      <DependentUpon>GrupoEstatus_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\GrupoEstatus_Listado.aspx.designer.cs">
+      <DependentUpon>GrupoEstatus_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\GrupoRegla_Listado.aspx.cs">
+      <DependentUpon>GrupoRegla_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\GrupoRegla_Listado.aspx.designer.cs">
+      <DependentUpon>GrupoRegla_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Grupo_Listado.aspx.cs">
+      <DependentUpon>Grupo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Grupo_Listado.aspx.designer.cs">
+      <DependentUpon>Grupo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\LogRegla_Listado.aspx.cs">
+      <DependentUpon>LogRegla_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\LogRegla_Listado.aspx.designer.cs">
+      <DependentUpon>LogRegla_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\MetodoCosteo_Listado.aspx.cs">
+      <DependentUpon>MetodoCosteo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\MetodoCosteo_Listado.aspx.designer.cs">
+      <DependentUpon>MetodoCosteo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Naturaleza_Listado.aspx.cs">
+      <DependentUpon>Naturaleza_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Naturaleza_Listado.aspx.designer.cs">
+      <DependentUpon>Naturaleza_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\NivelProducto_Listado.aspx.cs">
+      <DependentUpon>NivelProducto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\NivelProducto_Listado.aspx.designer.cs">
+      <DependentUpon>NivelProducto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Parametro_Listado.aspx.cs">
+      <DependentUpon>Parametro_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Parametro_Listado.aspx.designer.cs">
+      <DependentUpon>Parametro_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\PersonalTipoContacto_Listado.aspx.cs">
+      <DependentUpon>PersonalTipoContacto_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\PersonalTipoContacto_Listado.aspx.designer.cs">
+      <DependentUpon>PersonalTipoContacto_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Sexo_Listado.aspx.cs">
+      <DependentUpon>Sexo_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\Sexo_Listado.aspx.designer.cs">
+      <DependentUpon>Sexo_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoDocumentoRegla_Listado.aspx.cs">
+      <DependentUpon>TipoDocumentoRegla_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoDocumentoRegla_Listado.aspx.designer.cs">
+      <DependentUpon>TipoDocumentoRegla_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoDocumento_Listado.aspx.cs">
+      <DependentUpon>TipoDocumento_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoDocumento_Listado.aspx.designer.cs">
+      <DependentUpon>TipoDocumento_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoMail_Listado.aspx.cs">
+      <DependentUpon>TipoMail_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoMail_Listado.aspx.designer.cs">
+      <DependentUpon>TipoMail_Listado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoTelefono_Listado.aspx.cs">
+      <DependentUpon>TipoTelefono_Listado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sistema\Catalogos\TipoTelefono_Listado.aspx.designer.cs">
+      <DependentUpon>TipoTelefono_Listado.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Recursos\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Recursos\Reportes\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Compras\Reportes\ReporteEjemplo.resx">
+      <DependentUpon>ReporteEjemplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Compras\Reportes\TipoCliente.resx">
+      <DependentUpon>TipoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cosmos.Academico.Api.Client\Cosmos.Academico.Api.Client.csproj">
+      <Project>{5f8cd273-7f79-4ccc-bc87-59ffbe3756c8}</Project>
+      <Name>Cosmos.Academico.Api.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Academico.Entidades\Cosmos.Academico.Entidades.csproj">
+      <Project>{abb0ffc5-56c4-45f0-8746-2f483fb01e00}</Project>
+      <Name>Cosmos.Academico.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Api.Entidades\Cosmos.Api.Entidades.csproj">
+      <Project>{986f516e-75e9-45ce-adde-c310f7e4c3ee}</Project>
+      <Name>Cosmos.Api.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Compras.Api.Client\Cosmos.Compras.Api.Client.csproj">
+      <Project>{ae2df593-423a-45b7-93f3-8603131c68db}</Project>
+      <Name>Cosmos.Compras.Api.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Compras.Entidades\Cosmos.Compras.Entidades.csproj">
+      <Project>{d2f43773-6d23-46ce-a39c-73f558be2c05}</Project>
+      <Name>Cosmos.Compras.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Framework\Cosmos.Framework.csproj">
+      <Project>{60625682-89d9-4732-8068-d0e226177a7f}</Project>
+      <Name>Cosmos.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Seguridad.Api.Client\Cosmos.Seguridad.Api.Client.csproj">
+      <Project>{17654807-08db-4efa-b819-6221d45796ce}</Project>
+      <Name>Cosmos.Seguridad.Api.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Seguridad.Entidades\Cosmos.Seguridad.Entidades.csproj">
+      <Project>{f4c4c421-356a-476c-af14-5e1a7e09f377}</Project>
+      <Name>Cosmos.Seguridad.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Sistema.Api.Client\Cosmos.Sistema.Api.Client.csproj">
+      <Project>{930df76b-f8f1-4c83-8bcd-819da394b7dc}</Project>
+      <Name>Cosmos.Sistema.Api.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.Sistema.Entidades\Cosmos.Sistema.Entidades.csproj">
+      <Project>{692b5c7b-ab68-44cb-88dc-19e8535ccf43}</Project>
+      <Name>Cosmos.Sistema.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14115</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14115/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

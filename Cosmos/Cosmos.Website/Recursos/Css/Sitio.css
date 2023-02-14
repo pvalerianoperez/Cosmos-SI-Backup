@@ -1,0 +1,133 @@
+﻿@font-face {
+    font-family: Oswald-Bold;
+    src: url(/Recursos/Fonts/Oswald-Bold.ttf);
+}
+body {
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    font-size:12px;
+    color:dimgray;
+    font-family:Tahoma,Geneva,sans-serif;
+    background:url("../Imagenes/FondoPantalla.png");
+}
+
+.alignText > div {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+display: table !important;
+height: 100%;
+}
+
+.alignText > div > span {
+display: table-cell !important;
+vertical-align: middle;
+}
+
+.alignText > div:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+        
+.alignText > div > img {
+    vertical-align: middle;
+    display: inline-block;
+}
+.Titulo1 {
+    font-weight:bold;
+    font-size:14px;
+    color: dimgray;
+    padding-bottom:50px;
+    margin-top:10px;
+}
+
+/* Menu */
+/*
+    * [1] & [3] "floats" makes the 2 divs align themselves respectively right & left
+    * [2] "overflow: auto;" makes this div take the remaining width
+    */
+.menuDiv { 
+    width: 100%;    
+    background:url("../Imagenes/FondoMenuPrincipal.png");
+}
+.menuLogo { 
+    width: 20%; 
+    max-width: 170px;  
+    min-width: 200px;
+    /*min-height:32px;
+    height:32px;*/
+    float: left; /* [1] */    
+    vertical-align:middle;   
+    }
+.menuOpciones { 
+    
+    float: left; /* [3] */
+    vertical-align:middle;
+    /*min-height:32px;
+    height:32px;*/
+    max-width: 700px; 
+    overflow: auto; /* [2] */
+    padding-right:150px;
+}
+
+.menuUsuario {    
+    background:url("../Imagenes/FondoMenuPrincipal.png");
+    width: unset;
+    overflow: auto; /* [2] */
+    padding-right:40px;
+    /*min-height:32px;
+    height:32px;*/
+    min-width:500px;    
+    /*max-width: 350px; 
+    min-width: 80px;*/ 
+    /*float: left; /* [3] */
+      
+    vertical-align:middle;    
+    text-align:right;
+}
+.menuAccionesDiv{ 
+    margin:auto; 
+    
+}
+.linkEmpresaModulo {
+    font-size:11px;
+}
+.flat .dxbButton
+{
+    background-image: none !important;
+}
+.divCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -259px;
+    margin-left: -175px;
+    width: 100px;
+    height: 100px;
+}
+​ .migaja {
+    color:orange;
+    font-weight:bold;
+    margin-left:25px;
+}
+.migajaDiv {
+    
+    float:left;
+    vertical-align:middle;
+    padding-top:0px;
+    padding-left:25px;
+    padding-right:45px;
+    font-family: Oswald-Bold;
+   
+}
+.contenidoDiv {
+    padding:25px;
+}
+
+.NoEditBorderClass {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}

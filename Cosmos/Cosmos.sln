@@ -1,0 +1,438 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Api", "Cosmos.Api\Cosmos.Api.csproj", "{53C9F92C-A201-4548-939C-EC9FE3B163DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Website", "Cosmos.Website\Cosmos.Website.csproj", "{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Compras.Api.Client", "Cosmos.Compras.Api.Client\Cosmos.Compras.Api.Client.csproj", "{AE2DF593-423A-45B7-93F3-8603131C68DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Compras.Entidades", "Cosmos.Compras.Entidades\Cosmos.Compras.Entidades.csproj", "{D2F43773-6D23-46CE-A39C-73F558BE2C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Compras.Negocio", "Cosmos.Compras.Negocio\Cosmos.Compras.Negocio.csproj", "{B9DF7B6A-1F7F-4B8E-82A8-78732C96D55A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Api.Entidades", "Cosmos.Api.Entidades\Cosmos.Api.Entidades.csproj", "{986F516E-75E9-45CE-ADDE-C310F7E4C3EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C85502BC-B735-407C-9181-E467769C0117}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compras", "Compras", "{E2605C52-124D-4BD1-A5E6-E1FC5E97020B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilerias", "Utilerias", "{A137167E-AFDC-4D13-BCF7-73F9AC1FDF6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sistema", "Sistema", "{3F062920-FE4E-4B55-88F9-D6B587366BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Framework", "Cosmos.Framework\Cosmos.Framework.csproj", "{60625682-89D9-4732-8068-D0E226177A7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seguridad", "Seguridad", "{EC9503D7-E3C8-4ECA-836B-07E567F9007E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Seguridad.Api.Client", "Cosmos.Seguridad.Api.Client\Cosmos.Seguridad.Api.Client.csproj", "{17654807-08DB-4EFA-B819-6221D45796CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Seguridad.Entidades", "Cosmos.Seguridad.Entidades\Cosmos.Seguridad.Entidades.csproj", "{F4C4C421-356A-476C-AF14-5E1A7E09F377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Seguridad.Negocio", "Cosmos.Seguridad.Negocio\Cosmos.Seguridad.Negocio.csproj", "{55B6FB6E-E712-4AD8-8795-BB689927722D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Sistema.Api.Client", "Cosmos.Sistema.Api.Client\Cosmos.Sistema.Api.Client.csproj", "{930DF76B-F8F1-4C83-8BCD-819DA394B7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Sistema.Entidades", "Cosmos.Sistema.Entidades\Cosmos.Sistema.Entidades.csproj", "{692B5C7B-AB68-44CB-88DC-19E8535CCF43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Sistema.Negocio", "Cosmos.Sistema.Negocio\Cosmos.Sistema.Negocio.csproj", "{21381D4E-E6D1-4919-BC4B-A495D3643C53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D3E85DB5-CBB2-4322-AE50-13FB0E1FEB54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulos", "Modulos", "{8D8057A1-C93B-4541-B865-2C06718BB538}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Cosmos.Database", "Cosmos.Database\Cosmos.Database.sqlproj", "{08040760-E6E5-4A6A-A260-AA0B97B80CE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{5F293380-42D9-40AF-9A57-3AB76BCF5D09}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Cosmos.Database.Academico", "Cosmos.Database.Academico\Cosmos.Database.Academico.sqlproj", "{F570A038-4A74-45BD-8841-79EA832DDAC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Academico", "Academico", "{A6F61CFD-6351-455E-81C8-A9BF4E2A6369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Academico.Entidades", "Cosmos.Academico.Entidades\Cosmos.Academico.Entidades.csproj", "{ABB0FFC5-56C4-45F0-8746-2F483FB01E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Academico.Negocio", "Cosmos.Academico.Negocio\Cosmos.Academico.Negocio.csproj", "{26A7A0DC-EBFD-4B97-ACBF-9CF19422EA49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Academico.Api.Client", "Cosmos.Academico.Api.Client\Cosmos.Academico.Api.Client.csproj", "{5F8CD273-7F79-4CCC-BC87-59FFBE3756C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mensajeria", "Mensajeria", "{FE31F5C0-1BC3-4489-B9D7-0919646E6C20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mensajeria", "Mensajeria", "{CC47E6B9-40D1-425A-81BB-FDD97404CC6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chat", "Chat", "{28A83B0F-C8F0-4776-BCA7-85F8C1E3F0C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comunica", "Comunica", "{01446767-58BD-4675-8A22-E20B2B6D4F30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Chat.Api.Client", "Cosmos.Mensajeria.Chat.Api.Client\Cosmos.Mensajeria.Chat.Api.Client.csproj", "{55571E89-9DE9-4D47-8102-26926F0D151C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Chat.Entidades", "Cosmos.Mensajeria.Chat.Entidades\Cosmos.Mensajeria.Chat.Entidades.csproj", "{BDA33810-FC39-4B02-9615-F24A0823D928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Chat.Negocio.Tests", "Cosmos.Mensajeria.Chat.Negocio.Tests\Cosmos.Mensajeria.Chat.Negocio.Tests.csproj", "{5E8EC20F-E73D-41B6-A0C2-61D4C0620FDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Comunica.Entidades", "Cosmos.Mensajeria.Comunica.Entidades\Cosmos.Mensajeria.Comunica.Entidades.csproj", "{4897BE6A-E26F-4DC1-95AC-6215E6C939FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Comunica.Api.Client", "Cosmos.Mensajeria.Comunica.Api.Client\Cosmos.Mensajeria.Comunica.Api.Client.csproj", "{8E1041B8-0FC6-4B48-B42F-84BF72A4CFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Comunica.Negocio", "Cosmos.Mensajeria.Comunica.Negocio\Cosmos.Mensajeria.Comunica.Negocio.csproj", "{CF0053DE-82E3-42D0-B489-06787650CF49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Mensajeria.Chat.Negocio", "Cosmos.Mensajeria.Chat.Negocio\Cosmos.Mensajeria.Chat.Negocio.csproj", "{E9159678-E4E7-4857-8309-C51DE40344CE}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Cosmos.DB", "Cosmos.DB\Cosmos.DB.sqlproj", "{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53C9F92C-A201-4548-939C-EC9FE3B163DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C9F92C-A201-4548-939C-EC9FE3B163DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C9F92C-A201-4548-939C-EC9FE3B163DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C9F92C-A201-4548-939C-EC9FE3B163DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2DF593-423A-45B7-93F3-8603131C68DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2DF593-423A-45B7-93F3-8603131C68DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2DF593-423A-45B7-93F3-8603131C68DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2DF593-423A-45B7-93F3-8603131C68DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F43773-6D23-46CE-A39C-73F558BE2C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F43773-6D23-46CE-A39C-73F558BE2C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F43773-6D23-46CE-A39C-73F558BE2C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F43773-6D23-46CE-A39C-73F558BE2C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DF7B6A-1F7F-4B8E-82A8-78732C96D55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DF7B6A-1F7F-4B8E-82A8-78732C96D55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DF7B6A-1F7F-4B8E-82A8-78732C96D55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DF7B6A-1F7F-4B8E-82A8-78732C96D55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986F516E-75E9-45CE-ADDE-C310F7E4C3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986F516E-75E9-45CE-ADDE-C310F7E4C3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986F516E-75E9-45CE-ADDE-C310F7E4C3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986F516E-75E9-45CE-ADDE-C310F7E4C3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60625682-89D9-4732-8068-D0E226177A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60625682-89D9-4732-8068-D0E226177A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60625682-89D9-4732-8068-D0E226177A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60625682-89D9-4732-8068-D0E226177A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17654807-08DB-4EFA-B819-6221D45796CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17654807-08DB-4EFA-B819-6221D45796CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17654807-08DB-4EFA-B819-6221D45796CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17654807-08DB-4EFA-B819-6221D45796CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C4C421-356A-476C-AF14-5E1A7E09F377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C4C421-356A-476C-AF14-5E1A7E09F377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C4C421-356A-476C-AF14-5E1A7E09F377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C4C421-356A-476C-AF14-5E1A7E09F377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B6FB6E-E712-4AD8-8795-BB689927722D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B6FB6E-E712-4AD8-8795-BB689927722D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B6FB6E-E712-4AD8-8795-BB689927722D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B6FB6E-E712-4AD8-8795-BB689927722D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{930DF76B-F8F1-4C83-8BCD-819DA394B7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930DF76B-F8F1-4C83-8BCD-819DA394B7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930DF76B-F8F1-4C83-8BCD-819DA394B7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930DF76B-F8F1-4C83-8BCD-819DA394B7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692B5C7B-AB68-44CB-88DC-19E8535CCF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692B5C7B-AB68-44CB-88DC-19E8535CCF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692B5C7B-AB68-44CB-88DC-19E8535CCF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692B5C7B-AB68-44CB-88DC-19E8535CCF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21381D4E-E6D1-4919-BC4B-A495D3643C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21381D4E-E6D1-4919-BC4B-A495D3643C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21381D4E-E6D1-4919-BC4B-A495D3643C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21381D4E-E6D1-4919-BC4B-A495D3643C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F570A038-4A74-45BD-8841-79EA832DDAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F570A038-4A74-45BD-8841-79EA832DDAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F570A038-4A74-45BD-8841-79EA832DDAC6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F570A038-4A74-45BD-8841-79EA832DDAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F570A038-4A74-45BD-8841-79EA832DDAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F570A038-4A74-45BD-8841-79EA832DDAC6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ABB0FFC5-56C4-45F0-8746-2F483FB01E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB0FFC5-56C4-45F0-8746-2F483FB01E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB0FFC5-56C4-45F0-8746-2F483FB01E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB0FFC5-56C4-45F0-8746-2F483FB01E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A7A0DC-EBFD-4B97-ACBF-9CF19422EA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A7A0DC-EBFD-4B97-ACBF-9CF19422EA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A7A0DC-EBFD-4B97-ACBF-9CF19422EA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A7A0DC-EBFD-4B97-ACBF-9CF19422EA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8CD273-7F79-4CCC-BC87-59FFBE3756C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8CD273-7F79-4CCC-BC87-59FFBE3756C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8CD273-7F79-4CCC-BC87-59FFBE3756C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8CD273-7F79-4CCC-BC87-59FFBE3756C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55571E89-9DE9-4D47-8102-26926F0D151C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55571E89-9DE9-4D47-8102-26926F0D151C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55571E89-9DE9-4D47-8102-26926F0D151C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55571E89-9DE9-4D47-8102-26926F0D151C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA33810-FC39-4B02-9615-F24A0823D928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA33810-FC39-4B02-9615-F24A0823D928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA33810-FC39-4B02-9615-F24A0823D928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA33810-FC39-4B02-9615-F24A0823D928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8EC20F-E73D-41B6-A0C2-61D4C0620FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8EC20F-E73D-41B6-A0C2-61D4C0620FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8EC20F-E73D-41B6-A0C2-61D4C0620FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8EC20F-E73D-41B6-A0C2-61D4C0620FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4897BE6A-E26F-4DC1-95AC-6215E6C939FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4897BE6A-E26F-4DC1-95AC-6215E6C939FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4897BE6A-E26F-4DC1-95AC-6215E6C939FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4897BE6A-E26F-4DC1-95AC-6215E6C939FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1041B8-0FC6-4B48-B42F-84BF72A4CFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1041B8-0FC6-4B48-B42F-84BF72A4CFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1041B8-0FC6-4B48-B42F-84BF72A4CFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1041B8-0FC6-4B48-B42F-84BF72A4CFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0053DE-82E3-42D0-B489-06787650CF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0053DE-82E3-42D0-B489-06787650CF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0053DE-82E3-42D0-B489-06787650CF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0053DE-82E3-42D0-B489-06787650CF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9159678-E4E7-4857-8309-C51DE40344CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9159678-E4E7-4857-8309-C51DE40344CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9159678-E4E7-4857-8309-C51DE40344CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9159678-E4E7-4857-8309-C51DE40344CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53C9F92C-A201-4548-939C-EC9FE3B163DC} = {C85502BC-B735-407C-9181-E467769C0117}
+		{87019EC3-E9D4-4EE4-BD74-478B5DFEEF20} = {D3E85DB5-CBB2-4322-AE50-13FB0E1FEB54}
+		{AE2DF593-423A-45B7-93F3-8603131C68DB} = {E2605C52-124D-4BD1-A5E6-E1FC5E97020B}
+		{D2F43773-6D23-46CE-A39C-73F558BE2C05} = {E2605C52-124D-4BD1-A5E6-E1FC5E97020B}
+		{B9DF7B6A-1F7F-4B8E-82A8-78732C96D55A} = {E2605C52-124D-4BD1-A5E6-E1FC5E97020B}
+		{986F516E-75E9-45CE-ADDE-C310F7E4C3EE} = {C85502BC-B735-407C-9181-E467769C0117}
+		{E2605C52-124D-4BD1-A5E6-E1FC5E97020B} = {8D8057A1-C93B-4541-B865-2C06718BB538}
+		{3F062920-FE4E-4B55-88F9-D6B587366BF3} = {8D8057A1-C93B-4541-B865-2C06718BB538}
+		{60625682-89D9-4732-8068-D0E226177A7F} = {A137167E-AFDC-4D13-BCF7-73F9AC1FDF6E}
+		{EC9503D7-E3C8-4ECA-836B-07E567F9007E} = {8D8057A1-C93B-4541-B865-2C06718BB538}
+		{17654807-08DB-4EFA-B819-6221D45796CE} = {EC9503D7-E3C8-4ECA-836B-07E567F9007E}
+		{F4C4C421-356A-476C-AF14-5E1A7E09F377} = {EC9503D7-E3C8-4ECA-836B-07E567F9007E}
+		{55B6FB6E-E712-4AD8-8795-BB689927722D} = {EC9503D7-E3C8-4ECA-836B-07E567F9007E}
+		{930DF76B-F8F1-4C83-8BCD-819DA394B7DC} = {3F062920-FE4E-4B55-88F9-D6B587366BF3}
+		{692B5C7B-AB68-44CB-88DC-19E8535CCF43} = {3F062920-FE4E-4B55-88F9-D6B587366BF3}
+		{21381D4E-E6D1-4919-BC4B-A495D3643C53} = {3F062920-FE4E-4B55-88F9-D6B587366BF3}
+		{08040760-E6E5-4A6A-A260-AA0B97B80CE5} = {5F293380-42D9-40AF-9A57-3AB76BCF5D09}
+		{F570A038-4A74-45BD-8841-79EA832DDAC6} = {5F293380-42D9-40AF-9A57-3AB76BCF5D09}
+		{A6F61CFD-6351-455E-81C8-A9BF4E2A6369} = {8D8057A1-C93B-4541-B865-2C06718BB538}
+		{ABB0FFC5-56C4-45F0-8746-2F483FB01E00} = {A6F61CFD-6351-455E-81C8-A9BF4E2A6369}
+		{26A7A0DC-EBFD-4B97-ACBF-9CF19422EA49} = {A6F61CFD-6351-455E-81C8-A9BF4E2A6369}
+		{5F8CD273-7F79-4CCC-BC87-59FFBE3756C8} = {A6F61CFD-6351-455E-81C8-A9BF4E2A6369}
+		{CC47E6B9-40D1-425A-81BB-FDD97404CC6A} = {8D8057A1-C93B-4541-B865-2C06718BB538}
+		{28A83B0F-C8F0-4776-BCA7-85F8C1E3F0C9} = {CC47E6B9-40D1-425A-81BB-FDD97404CC6A}
+		{01446767-58BD-4675-8A22-E20B2B6D4F30} = {CC47E6B9-40D1-425A-81BB-FDD97404CC6A}
+		{55571E89-9DE9-4D47-8102-26926F0D151C} = {28A83B0F-C8F0-4776-BCA7-85F8C1E3F0C9}
+		{BDA33810-FC39-4B02-9615-F24A0823D928} = {28A83B0F-C8F0-4776-BCA7-85F8C1E3F0C9}
+		{5E8EC20F-E73D-41B6-A0C2-61D4C0620FDC} = {28A83B0F-C8F0-4776-BCA7-85F8C1E3F0C9}
+		{4897BE6A-E26F-4DC1-95AC-6215E6C939FE} = {01446767-58BD-4675-8A22-E20B2B6D4F30}
+		{8E1041B8-0FC6-4B48-B42F-84BF72A4CFBE} = {01446767-58BD-4675-8A22-E20B2B6D4F30}
+		{CF0053DE-82E3-42D0-B489-06787650CF49} = {01446767-58BD-4675-8A22-E20B2B6D4F30}
+		{E9159678-E4E7-4857-8309-C51DE40344CE} = {28A83B0F-C8F0-4776-BCA7-85F8C1E3F0C9}
+		{7BD1C15C-CF65-4F5D-AF5B-A65131F82E5E} = {5F293380-42D9-40AF-9A57-3AB76BCF5D09}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B44FF9E-FC98-4121-ABAF-C54C1C57FB12}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 27
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs201501.discountasp.net:8080/tfs/n400
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cosmos.Api\\Cosmos.Api.csproj
+		SccProjectTopLevelParentUniqueName1 = Cosmos.sln
+		SccProjectName1 = Cosmos.Api
+		SccLocalPath1 = Cosmos.Api
+		SccProjectUniqueName2 = Cosmos.Compras.Api.Client\\Cosmos.Compras.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName2 = Cosmos.sln
+		SccProjectName2 = Cosmos.Compras.Api.Client
+		SccLocalPath2 = Cosmos.Compras.Api.Client
+		SccProjectUniqueName3 = Cosmos.Compras.Entidades\\Cosmos.Compras.Entidades.csproj
+		SccProjectTopLevelParentUniqueName3 = Cosmos.sln
+		SccProjectName3 = Cosmos.Compras.Entidades
+		SccLocalPath3 = Cosmos.Compras.Entidades
+		SccProjectUniqueName4 = Cosmos.Compras.Negocio\\Cosmos.Compras.Negocio.csproj
+		SccProjectTopLevelParentUniqueName4 = Cosmos.sln
+		SccProjectName4 = Cosmos.Compras.Negocio
+		SccLocalPath4 = Cosmos.Compras.Negocio
+		SccProjectUniqueName5 = Cosmos.Api.Entidades\\Cosmos.Api.Entidades.csproj
+		SccProjectTopLevelParentUniqueName5 = Cosmos.sln
+		SccProjectName5 = Cosmos.Api.Entidades
+		SccLocalPath5 = Cosmos.Api.Entidades
+		SccProjectUniqueName6 = Cosmos.Framework\\Cosmos.Framework.csproj
+		SccProjectTopLevelParentUniqueName6 = Cosmos.sln
+		SccProjectName6 = Cosmos.Framework
+		SccLocalPath6 = Cosmos.Framework
+		SccProjectUniqueName7 = Cosmos.Seguridad.Api.Client\\Cosmos.Seguridad.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName7 = Cosmos.sln
+		SccProjectName7 = Cosmos.Seguridad.Api.Client
+		SccLocalPath7 = Cosmos.Seguridad.Api.Client
+		SccProjectUniqueName8 = Cosmos.Seguridad.Entidades\\Cosmos.Seguridad.Entidades.csproj
+		SccProjectTopLevelParentUniqueName8 = Cosmos.sln
+		SccProjectName8 = Cosmos.Seguridad.Entidades
+		SccLocalPath8 = Cosmos.Seguridad.Entidades
+		SccProjectUniqueName9 = Cosmos.Seguridad.Negocio\\Cosmos.Seguridad.Negocio.csproj
+		SccProjectTopLevelParentUniqueName9 = Cosmos.sln
+		SccProjectName9 = Cosmos.Seguridad.Negocio
+		SccLocalPath9 = Cosmos.Seguridad.Negocio
+		SccProjectUniqueName10 = Cosmos.Sistema.Api.Client\\Cosmos.Sistema.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName10 = Cosmos.sln
+		SccProjectName10 = Cosmos.Sistema.Api.Client
+		SccLocalPath10 = Cosmos.Sistema.Api.Client
+		SccProjectUniqueName11 = Cosmos.Sistema.Entidades\\Cosmos.Sistema.Entidades.csproj
+		SccProjectTopLevelParentUniqueName11 = Cosmos.sln
+		SccProjectName11 = Cosmos.Sistema.Entidades
+		SccLocalPath11 = Cosmos.Sistema.Entidades
+		SccProjectUniqueName12 = Cosmos.Sistema.Negocio\\Cosmos.Sistema.Negocio.csproj
+		SccProjectTopLevelParentUniqueName12 = Cosmos.sln
+		SccProjectName12 = Cosmos.Sistema.Negocio
+		SccLocalPath12 = Cosmos.Sistema.Negocio
+		SccProjectUniqueName13 = Cosmos.Academico.Entidades\\Cosmos.Academico.Entidades.csproj
+		SccProjectTopLevelParentUniqueName13 = Cosmos.sln
+		SccProjectName13 = Cosmos.Academico.Entidades
+		SccLocalPath13 = Cosmos.Academico.Entidades
+		SccProjectUniqueName14 = Cosmos.Academico.Negocio\\Cosmos.Academico.Negocio.csproj
+		SccProjectTopLevelParentUniqueName14 = Cosmos.sln
+		SccProjectName14 = Cosmos.Academico.Negocio
+		SccLocalPath14 = Cosmos.Academico.Negocio
+		SccProjectUniqueName15 = Cosmos.Academico.Api.Client\\Cosmos.Academico.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName15 = Cosmos.sln
+		SccProjectName15 = Cosmos.Academico.Api.Client
+		SccLocalPath15 = Cosmos.Academico.Api.Client
+		SccProjectUniqueName16 = Cosmos.Mensajeria.Chat.Api.Client\\Cosmos.Mensajeria.Chat.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName16 = Cosmos.sln
+		SccProjectName16 = Cosmos.Mensajeria.Chat.Api.Client
+		SccLocalPath16 = Cosmos.Mensajeria.Chat.Api.Client
+		SccProjectUniqueName17 = Cosmos.Mensajeria.Chat.Entidades\\Cosmos.Mensajeria.Chat.Entidades.csproj
+		SccProjectTopLevelParentUniqueName17 = Cosmos.sln
+		SccProjectName17 = Cosmos.Mensajeria.Chat.Entidades
+		SccLocalPath17 = Cosmos.Mensajeria.Chat.Entidades
+		SccProjectUniqueName18 = Cosmos.Mensajeria.Comunica.Entidades\\Cosmos.Mensajeria.Comunica.Entidades.csproj
+		SccProjectTopLevelParentUniqueName18 = Cosmos.sln
+		SccProjectName18 = Cosmos.Mensajeria.Comunica.Entidades
+		SccLocalPath18 = Cosmos.Mensajeria.Comunica.Entidades
+		SccProjectUniqueName19 = Cosmos.Mensajeria.Comunica.Api.Client\\Cosmos.Mensajeria.Comunica.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName19 = Cosmos.sln
+		SccProjectName19 = Cosmos.Mensajeria.Comunica.Api.Client
+		SccLocalPath19 = Cosmos.Mensajeria.Comunica.Api.Client
+		SccProjectUniqueName20 = Cosmos.Mensajeria.Comunica.Negocio\\Cosmos.Mensajeria.Comunica.Negocio.csproj
+		SccProjectTopLevelParentUniqueName20 = Cosmos.sln
+		SccProjectName20 = Cosmos.Mensajeria.Comunica.Negocio
+		SccLocalPath20 = Cosmos.Mensajeria.Comunica.Negocio
+		SccProjectUniqueName21 = Cosmos.Mensajeria.Chat.Negocio\\Cosmos.Mensajeria.Chat.Negocio.csproj
+		SccProjectTopLevelParentUniqueName21 = Cosmos.sln
+		SccProjectName21 = Cosmos.Mensajeria.Chat.Negocio
+		SccLocalPath21 = Cosmos.Mensajeria.Chat.Negocio
+		SccProjectUniqueName22 = Cosmos.Website\\Cosmos.Website.csproj
+		SccProjectTopLevelParentUniqueName22 = Cosmos.sln
+		SccProjectName22 = Cosmos.Website
+		SccLocalPath22 = Cosmos.Website
+		SccProjectUniqueName23 = Cosmos.Mensajeria.Chat.Negocio.Tests\\Cosmos.Mensajeria.Chat.Negocio.Tests.csproj
+		SccProjectTopLevelParentUniqueName23 = Cosmos.sln
+		SccProjectName23 = Cosmos.Mensajeria.Chat.Negocio.Tests
+		SccLocalPath23 = Cosmos.Mensajeria.Chat.Negocio.Tests
+		SccProjectUniqueName24 = Cosmos.Database\\Cosmos.Database.sqlproj
+		SccProjectTopLevelParentUniqueName24 = Cosmos.sln
+		SccProjectName24 = Cosmos.Database
+		SccLocalPath24 = Cosmos.Database
+		SccProjectUniqueName25 = Cosmos.Database.Academico\\Cosmos.Database.Academico.sqlproj
+		SccProjectTopLevelParentUniqueName25 = Cosmos.sln
+		SccProjectName25 = Cosmos.Database.Academico
+		SccLocalPath25 = Cosmos.Database.Academico
+		SccProjectUniqueName26 = Cosmos.DB\\Cosmos.DB.sqlproj
+		SccProjectTopLevelParentUniqueName26 = Cosmos.sln
+		SccProjectName26 = Cosmos.DB
+		SccLocalPath26 = Cosmos.DB
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 24
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs201501.discountasp.net:8080/tfs/n400
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cosmos.Website\\Cosmos.Website.csproj
+		SccProjectTopLevelParentUniqueName1 = Cosmos.sln
+		SccProjectName1 = Cosmos.Website
+		SccLocalPath1 = Cosmos.Website
+		SccProjectUniqueName2 = Cosmos.Compras.Api.Client\\Cosmos.Compras.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName2 = Cosmos.sln
+		SccProjectName2 = Cosmos.Compras.Api.Client
+		SccLocalPath2 = Cosmos.Compras.Api.Client
+		SccProjectUniqueName3 = Cosmos.Compras.Entidades\\Cosmos.Compras.Entidades.csproj
+		SccProjectTopLevelParentUniqueName3 = Cosmos.sln
+		SccProjectName3 = Cosmos.Compras.Entidades
+		SccLocalPath3 = Cosmos.Compras.Entidades
+		SccProjectUniqueName4 = Cosmos.Compras.Negocio\\Cosmos.Compras.Negocio.csproj
+		SccProjectTopLevelParentUniqueName4 = Cosmos.sln
+		SccProjectName4 = Cosmos.Compras.Negocio
+		SccLocalPath4 = Cosmos.Compras.Negocio
+		SccProjectUniqueName5 = Cosmos.Api\\Cosmos.Api.csproj
+		SccProjectTopLevelParentUniqueName5 = Cosmos.sln
+		SccProjectName5 = Cosmos.Api
+		SccLocalPath5 = Cosmos.Api
+		SccProjectUniqueName6 = Cosmos.Api.Entidades\\Cosmos.Api.Entidades.csproj
+		SccProjectTopLevelParentUniqueName6 = Cosmos.sln
+		SccProjectName6 = Cosmos.Api.Entidades
+		SccLocalPath6 = Cosmos.Api.Entidades
+		SccProjectUniqueName7 = Cosmos.Framework\\Cosmos.Framework.csproj
+		SccProjectTopLevelParentUniqueName7 = Cosmos.sln
+		SccProjectName7 = Cosmos.Framework
+		SccLocalPath7 = Cosmos.Framework
+		SccProjectUniqueName8 = Cosmos.Seguridad.Api.Client\\Cosmos.Seguridad.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName8 = Cosmos.sln
+		SccProjectName8 = Cosmos.Seguridad.Api.Client
+		SccLocalPath8 = Cosmos.Seguridad.Api.Client
+		SccProjectUniqueName9 = Cosmos.Seguridad.Entidades\\Cosmos.Seguridad.Entidades.csproj
+		SccProjectTopLevelParentUniqueName9 = Cosmos.sln
+		SccProjectName9 = Cosmos.Seguridad.Entidades
+		SccLocalPath9 = Cosmos.Seguridad.Entidades
+		SccProjectUniqueName10 = Cosmos.Seguridad.Negocio\\Cosmos.Seguridad.Negocio.csproj
+		SccProjectTopLevelParentUniqueName10 = Cosmos.sln
+		SccProjectName10 = Cosmos.Seguridad.Negocio
+		SccLocalPath10 = Cosmos.Seguridad.Negocio
+		SccProjectUniqueName11 = Cosmos.Sistema.Api.Client\\Cosmos.Sistema.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName11 = Cosmos.sln
+		SccProjectName11 = Cosmos.Sistema.Api.Client
+		SccLocalPath11 = Cosmos.Sistema.Api.Client
+		SccProjectUniqueName12 = Cosmos.Sistema.Entidades\\Cosmos.Sistema.Entidades.csproj
+		SccProjectTopLevelParentUniqueName12 = Cosmos.sln
+		SccProjectName12 = Cosmos.Sistema.Entidades
+		SccLocalPath12 = Cosmos.Sistema.Entidades
+		SccProjectUniqueName13 = Cosmos.Sistema.Negocio\\Cosmos.Sistema.Negocio.csproj
+		SccProjectTopLevelParentUniqueName13 = Cosmos.sln
+		SccProjectName13 = Cosmos.Sistema.Negocio
+		SccLocalPath13 = Cosmos.Sistema.Negocio
+		SccProjectUniqueName14 = Cosmos.Database\\Cosmos.Database.sqlproj
+		SccProjectTopLevelParentUniqueName14 = Cosmos.sln
+		SccProjectName14 = Cosmos.Database
+		SccLocalPath14 = Cosmos.Database
+		SccProjectUniqueName15 = Cosmos.Database.Academico\\Cosmos.Database.Academico.sqlproj
+		SccProjectTopLevelParentUniqueName15 = Cosmos.sln
+		SccProjectName15 = Cosmos.Database.Academico
+		SccLocalPath15 = Cosmos.Database.Academico
+		SccProjectUniqueName16 = Cosmos.Academico.Entidades\\Cosmos.Academico.Entidades.csproj
+		SccProjectTopLevelParentUniqueName16 = Cosmos.sln
+		SccProjectName16 = Cosmos.Academico.Entidades
+		SccLocalPath16 = Cosmos.Academico.Entidades
+		SccProjectUniqueName17 = Cosmos.Academico.Negocio\\Cosmos.Academico.Negocio.csproj
+		SccProjectTopLevelParentUniqueName17 = Cosmos.sln
+		SccProjectName17 = Cosmos.Academico.Negocio
+		SccLocalPath17 = Cosmos.Academico.Negocio
+		SccProjectUniqueName18 = Cosmos.Academico.Api.Client\\Cosmos.Academico.Api.Client.csproj
+		SccProjectTopLevelParentUniqueName18 = Cosmos.sln
+		SccProjectName18 = Cosmos.Academico.Api.Client
+		SccLocalPath18 = Cosmos.Academico.Api.Client
+		SccProjectUniqueName19 = Cosmos.Mensajeria.Chat.Negocio\\Cosmos.Mensajeria.Chat.Negocio.csproj
+		SccProjectTopLevelParentUniqueName19 = Cosmos.sln
+		SccProjectName19 = Cosmos.Mensajeria.Chat.Negocio
+		SccLocalPath19 = Cosmos.Mensajeria.Chat.Negocio
+		SccProjectUniqueName20 = Cosmos.Mensajeria.Chat.Entidades\\Cosmos.Mensajeria.Chat.Entidades.csproj
+		SccProjectTopLevelParentUniqueName20 = Cosmos.sln
+		SccProjectName20 = Cosmos.Mensajeria.Chat.Entidades
+		SccLocalPath20 = Cosmos.Mensajeria.Chat.Entidades
+	EndGlobalSection
+EndGlobal

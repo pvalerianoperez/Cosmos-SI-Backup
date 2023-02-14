@@ -1,0 +1,7 @@
+﻿
+
+CREATE PROCEDURE [dbo].[PpalRepresentanteProveedorDomicilio_Listado]
+AS
+
+SELECT  PpalRepresentanteProveedorDomicilioID,PpalRepresentanteProveedorID,EspDomicilioID,Comentario,Predeterminado,CfgTipoDomicilioID
+FROM    PpalRepresentanteProveedorDomicilio

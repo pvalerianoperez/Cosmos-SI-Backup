@@ -1,0 +1,8 @@
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\bin\Debug\Cosmos.Database.dacpac
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\Cosmos.Database.sqlproj.AssemblyReference.cache
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\Model.xml
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\refactor.xml
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\postdeploy.sql
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\predeploy.sql
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\Cosmos.Database.dll
+C:\Users\Dell\Documents\cosmoscsi\Cosmos-SI\v1.0\Codigo\Cosmos\Cosmos.Database\obj\Debug\Cosmos.Database.pdb

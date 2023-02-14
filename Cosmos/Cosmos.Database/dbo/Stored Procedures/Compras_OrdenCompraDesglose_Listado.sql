@@ -1,0 +1,7 @@
+﻿
+
+CREATE PROCEDURE Compras_OrdenCompraDesglose_Listado
+AS
+
+SELECT  OrdenCompraDesgloseID,OrdenCompraDetalleID,RenglonID,SucursalID,CentroCostoID,AreaID,AlmacenID,ConceptoEgresoID,CuentaContableID,Cantidad,RequisicionDetalleID
+FROM    OrdenCompraDesglose

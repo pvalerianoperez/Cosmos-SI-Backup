@@ -1,0 +1,224 @@
+﻿
+
+<%@ Page Title="" Language="C#" MasterPageFile="~/Recursos/MasterPages/SitioProtegido.Master" AutoEventWireup="true" CodeBehind="Serie_Listado.aspx.cs" Inherits="Cosmos.Website.Sistema.Compras.Catalogos.Serie_Listado" %>
+<%@ Register assembly="DevExpress.Web.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphContenido" runat="server">    
+    <script type="text/javascript">
+        function AccionMenuItemClick(e) {
+            switch (e.item.name) {
+                case "AGREGAR":
+                    Editar(0);
+                    break;
+                case "MODIFICAR":
+                case "ELIMINAR":
+                case "IMPRIMIR":
+                case "EXPORTAR_PDF":
+                case "EXPORTAR_EXCEL":
+                case "AUTORIZAR":
+                case "CANCELAR":
+                case "BLOQUEAR":
+                    __doPostBack(e.item.name, "")
+                    break;
+                default:
+                    break;
+            }            
+        }
+    </script>
+    <script type="text/javascript">        
+        $(function () {
+            resize_grid_pane();
+            $(window).resize(resize_grid_pane);
+        });
+        function resize_grid_pane() {
+            var div = $(".dxgvCSD");
+            var hEncabezado = $("#divEncabezado").height();          
+            if (div != null) {
+                var offset = div.offset;
+                remaining_height = parseInt($(window).height() - hEncabezado - 140);
+                div.height(remaining_height);
+            }                        
+        }
+        function Editar(id) {
+            if (id > 0) {
+
+            } else {
+                Grid.AddNewRow();
+            }
+        }
+        function Eliminar(id) {
+            Grid.DeleteRow(id);
+            /*
+            swal({
+                title: "¡Eliminar!",
+                text: "¿Desea eliminar el registro?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "SI",
+                cancelButtonText: "NO",
+                closeOnConfirm: true,
+                closeOnCancel: true
+            },
+                function (isConfirm) {
+                    if (isConfirm) {                            
+                        var index = id;
+                        Grid.DeleteRow(index);
+                    }
+                });
+            */
+        }
+    </script>
+    <dx:ASPxGridViewExporter ID="ASPxGridViewExporter1" runat="server" GridViewID="Grid"></dx:ASPxGridViewExporter>
+    <asp:ObjectDataSource ID="odsGrid" runat="server" SelectMethod="Listado" TypeName="Cosmos.Compras.Api.Client.Serie">
+        <SelectParameters>
+            <asp:SessionParameter Name="empresaID" SessionField="EmpresaID" Type="Int32" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="odsSucursal" runat="server" SelectMethod="Listado" TypeName="Cosmos.Compras.Api.Client.Sucursal">
+        <SelectParameters>
+            <asp:SessionParameter Name="empresaID" SessionField="EmpresaID" Type="Int32" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="odsTipoDocumento" runat="server" SelectMethod="Listado" TypeName="Cosmos.Sistema.Api.Client.TipoDocumento"></asp:ObjectDataSource>
+    <dx:ASPxGridView ID="Grid" 
+        ClientInstanceName="Grid" 
+        runat="server" 
+        DataSourceID="odsGrid" 
+        AutoGenerateColumns="False" 
+        KeyFieldName="SerieID"
+        Width="100%" 
+        OnBatchUpdate="Grid_BatchUpdate" 
+        OnCommandButtonInitialize="Grid_CommandButtonInitialize" >
+        <ClientSideEvents EndCallback="function(s, e) {resize_grid_pane();}" />
+        <SettingsPager Mode="ShowAllRecords"></SettingsPager>
+        <SettingsEditing Mode="Batch">
+            <BatchEditSettings HighlightDeletedRows="False" />
+        </SettingsEditing>
+        <Settings ShowFilterRow="True" VerticalScrollBarMode="Auto" />                
+        <SettingsCommandButton>
+            <PreviewChangesButton Text="Revisión de cambios">
+                <Image IconID="zoom_zoom_16x16">
+                </Image>
+            </PreviewChangesButton>
+            <HidePreviewButton Text="Vista normal">
+                <Image IconID="richedit_inserttable_16x16">
+                </Image>
+            </HidePreviewButton>
+            <NewButton ButtonType="Secondary" RenderMode="Secondary" Text="Nuevo">
+                <Image IconID="actions_addfile_16x16">
+                </Image>
+                <Styles>
+                    <Style Width="100%">
+                    </Style>
+                </Styles>
+            </NewButton>
+            <UpdateButton ButtonType="Outline" RenderMode="Outline" Text="Guardar los cambios">
+                <Image IconID="actions_apply_16x16">
+                </Image>
+            </UpdateButton>
+            <CancelButton Text="Cancelar los cambios">
+                <Image IconID="actions_reset_16x16">
+                </Image>
+            </CancelButton>
+            <EditButton>
+                <Image IconID="edit_edit_16x16">
+                </Image>
+            </EditButton>
+            <DeleteButton ButtonType="Secondary" RenderMode="Secondary" Text="Eliminar">
+                <Image IconID="actions_trash_16x16">
+                </Image>
+                <Styles>
+                    <Style Width="100%">
+                    </Style>
+                </Styles>
+            </DeleteButton>
+        </SettingsCommandButton>
+        <SettingsPopup>
+        <HeaderFilter MinHeight="140px"></HeaderFilter>
+        </SettingsPopup>
+        <SettingsText BatchEditChangesPreviewDeletedValues="Eliminados" BatchEditChangesPreviewInsertedValues="Nuevos" BatchEditChangesPreviewUpdatedValues="Modificados" />
+        <Columns>
+            <dx:GridViewCommandColumn ButtonRenderMode="Image" ButtonType="Image" ShowDeleteButton="True" ShowNewButtonInHeader="True" VisibleIndex="0" Width="100px">
+            </dx:GridViewCommandColumn>
+            <dx:GridViewDataTextColumn Caption="ID" FieldName="SerieID" VisibleIndex="1" Width="50px" ReadOnly="true" Visible="False">
+                <Settings AutoFilterCondition="Contains" />
+            </dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn Caption="Clave" FieldName="SerieClave" VisibleIndex="4" MinWidth="120" Width="120px">
+                <PropertiesTextEdit MaxLength="10">
+                    <ValidationSettings>
+                        <RequiredField IsRequired="true" ErrorText="El dato es requerido" />
+                    </ValidationSettings>
+                </PropertiesTextEdit>
+                <Settings AutoFilterCondition="Contains" />
+            </dx:GridViewDataTextColumn>                
+            <dx:GridViewDataSpinEditColumn VisibleIndex="5" Caption="Folio Inicial" FieldName="FolioInicial" MinWidth="150" Width="150px">
+                <PropertiesSpinEdit DisplayFormatString="n0" MaxLength="5" NumberFormat="Number" DecimalPlaces="0">
+                    <ClearButton Visibility="Auto">
+                    </ClearButton>
+                    <ValidationSettings>
+                        <RequiredField IsRequired="true" ErrorText="El dato es requerido" />
+                    </ValidationSettings>
+                </PropertiesSpinEdit>
+                <CellStyle HorizontalAlign="Right" />                
+                <HeaderStyle HorizontalAlign="Right" />
+            </dx:GridViewDataSpinEditColumn>
+            <dx:GridViewDataSpinEditColumn VisibleIndex="6" Caption="Folio Final" FieldName="FolioFinal" MinWidth="150" Width="150px">
+                <PropertiesSpinEdit DisplayFormatString="n0" MaxLength="5" NumberFormat="Number" DecimalPlaces="0">
+                    <ClearButton Visibility="Auto">
+                    </ClearButton>
+                    <ValidationSettings>
+                        <RequiredField IsRequired="true" ErrorText="El dato es requerido" />
+                    </ValidationSettings>
+                </PropertiesSpinEdit>
+                <CellStyle HorizontalAlign="Right" />                
+                <HeaderStyle HorizontalAlign="Right" />
+            </dx:GridViewDataSpinEditColumn>
+            <dx:GridViewDataSpinEditColumn VisibleIndex="7" Caption="Ultimo Folio" FieldName="UltimoFolio" MinWidth="150" Width="150px" ReadOnly="true">
+                <PropertiesSpinEdit DisplayFormatString="n0" MaxLength="5" NumberFormat="Number" DecimalPlaces="0">
+                    <ClearButton Visibility="Auto">
+                    </ClearButton>                    
+                </PropertiesSpinEdit>
+                <CellStyle HorizontalAlign="Right" />                
+                <HeaderStyle HorizontalAlign="Right" />
+            </dx:GridViewDataSpinEditColumn>
+            <dx:GridViewDataCheckColumn VisibleIndex="8" Caption="Activo" FieldName="Estatus" MinWidth="70" Width="70px">
+                <PropertiesCheckEdit DisplayFormatString="g">
+                </PropertiesCheckEdit>
+                <CellStyle HorizontalAlign="Center" />                
+                <HeaderStyle HorizontalAlign="Center" />
+            </dx:GridViewDataCheckColumn>
+            <dx:GridViewDataCheckColumn VisibleIndex="9" Caption="Predeterminado" FieldName="Predeterminado" MinWidth="70" >
+                <PropertiesCheckEdit DisplayFormatString="g">
+                </PropertiesCheckEdit>
+                <CellStyle HorizontalAlign="Left" />                
+                <HeaderStyle HorizontalAlign="Left" />
+            </dx:GridViewDataCheckColumn>
+            
+            <dx:GridViewDataComboBoxColumn Caption="Tipo Documento" FieldName="TipoDocumentoID" MinWidth="150" VisibleIndex="2" Width="150px">
+                <PropertiesComboBox DataSourceID="odsTipoDocumento" DisplayFormatString="g" MaxLength="5" TextField="Nombre" ValueField="TipoDocumentoID">
+                    <ValidationSettings>
+                        <RequiredField ErrorText="El dato es requerido" IsRequired="True" />
+                    </ValidationSettings>
+                </PropertiesComboBox>
+                <HeaderStyle HorizontalAlign="Left" />
+                <CellStyle HorizontalAlign="Left">
+                </CellStyle>
+            </dx:GridViewDataComboBoxColumn>
+            <dx:GridViewDataComboBoxColumn Caption="Sucursal" FieldName="SucursalID" MinWidth="100" VisibleIndex="3">
+                <PropertiesComboBox DataSourceID="odsSucursal" DisplayFormatString="g" MaxLength="5" TextField="Nombre" ValueField="SucursalID">
+                    <ValidationSettings>
+                        <RequiredField IsRequired="true" ErrorText="El dato es requerido" />
+                    </ValidationSettings>
+                </PropertiesComboBox>
+                <HeaderStyle HorizontalAlign="Left" />
+                <CellStyle HorizontalAlign="Left">
+                </CellStyle>
+            </dx:GridViewDataComboBoxColumn>
+            
+        </Columns>
+    </dx:ASPxGridView>
+
+</asp:Content>
+

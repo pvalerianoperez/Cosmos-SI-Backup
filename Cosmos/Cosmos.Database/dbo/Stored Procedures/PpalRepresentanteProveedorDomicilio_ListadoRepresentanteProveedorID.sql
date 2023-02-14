@@ -1,0 +1,9 @@
+﻿
+
+CREATE PROCEDURE [dbo].[PpalRepresentanteProveedorDomicilio_ListadoRepresentanteProveedorID]
+@PpalRepresentanteProveedorID INT
+AS
+
+SELECT  PpalRepresentanteProveedorDomicilioID,PpalRepresentanteProveedorID,EspDomicilioID
+FROM    PpalRepresentanteProveedorDomicilio
+WHERE   PpalRepresentanteProveedorID = @PpalRepresentanteProveedorID
